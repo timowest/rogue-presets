@@ -1,7 +1,7 @@
 (ns rogue-presets.serializers
   (:require [clojure.string :as string]))
 
-(defn header
+(defn- header
   [lname label]
   (str "@prefix atom: <http://lv2plug.in/ns/ext/atom#> .
 @prefix lv2: <http://lv2plug.in/ns/lv2core#> .
@@ -15,9 +15,9 @@
   a pset:Preset ;
   lv2:appliesTo <http://www.github.com/timowest/rogue> ;
   rdfs:label \"" label "\" ;
-  lv2:port "))
+  lv2:port\n  "))
 
-(defn port
+(defn- port
   [name value]
   (str "[ lv2:symbol \"" name "\" ; pset:value " value " ]"))
 
