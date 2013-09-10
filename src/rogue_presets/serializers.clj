@@ -22,11 +22,15 @@
   (str "[ lv2:symbol \"" name "\" ; pset:value " value " ]"))
 
 (defn serialize
-  [name label values]
-  (str 
-    (header name label)
-    (string/join " ,\n  " (for [[k v] values]
-                            (port k v)))
-    "."))
+  ([preset]
+    (serialize (:name (meta preset))
+               (:label (meta preset))
+               preset))
+  ([name label values]
+    (str 
+      (header name label)
+      (string/join " ,\n  " (for [[k v] values]
+                              (port k v)))
+      ".")))
                  
   

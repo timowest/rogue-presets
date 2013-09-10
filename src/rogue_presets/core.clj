@@ -2,17 +2,20 @@
   (:require [rogue-presets.utils :refer :all]
             [rogue-presets.serializers :refer :all]))
 
-; basic leads pads basses fm reeds brasses strings effects 
+ (defmacro defpreset
+  [name label & contents]
+  (list 'def name
+        (list 'with-meta 
+              (cons 'merge contents)
+               {:name (str name) :label label})))
 
-(defmacro defpreset
-  [name & contents]
-  (list 'def name (cons 'merge contents)))
-
-(defpreset basic-saw
+ ; basic leads pads basses fm reeds brasses strings effects
+ 
+(defpreset basic-saw 
+  "Basic Saw"
   (bus_a :level 1)
   (osc1 :type saw :level 1 :level_a 1))
 
 (comment
-  (serialize "basic-saw" "Basic Saw" basic-saw))
-         
+  (serialize basic-saw))         
   
