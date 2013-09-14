@@ -15,13 +15,13 @@
               (cons 'merge contents)
                {:name (str name) :label label})))
 
- ; basic 
- 
 (defn basic-osc
   [osc-type]
   (merge defaults 
          (bus_a :level 0.5)
          (osc1 :type osc-type :level 1 :level_a 1)))
+
+; basic 
 
 (defpreset basic-saw "Basic Saw"
   (basic-osc saw))
@@ -31,8 +31,6 @@
 
 (defpreset basic-tri "Basic Tri"
   (basic-osc tri))
-
-; phase distortion
 
 (defpreset pd-saw "PD Saw"
   (basic-osc pd_saw))

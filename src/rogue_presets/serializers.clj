@@ -46,15 +46,15 @@
                               (port k v)))
       ".")))
                  
-  (defn dump
-    [path & presets]
-    (let [presets-txt (str presets-intro
-                           "\n\n"
-                           (string/join "\n\n"
-                                        (map (comp preset :name meta) presets)))]
-      (spit (str path "/presets.ttl") presets-txt)
-      (doseq [preset presets]
-        (spit (str path "/presets/" (:name (meta preset)) ".ttl") 
-              (serialize preset)))))
+(defn dump
+  [path & presets]
+  (let [presets-txt (str presets-intro
+                         "\n\n"
+                         (string/join "\n\n"
+                                      (map (comp preset :name meta) presets)))]
+    (spit (str path "/presets.ttl") presets-txt)
+    (doseq [preset presets]
+      (spit (str path "/presets/" (:name (meta preset)) ".ttl") 
+            (serialize preset)))))
           
     
