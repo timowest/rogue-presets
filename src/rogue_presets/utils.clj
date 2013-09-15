@@ -21,13 +21,12 @@
 (def osc3 (partial osc 3))
 (def osc4 (partial osc 4))
   
-(defall 
-  va_saw va_tri va_pulse
-  pd_saw pd_square pd_pulse pd_double_sine pd_saw_pulse pd_res1 pd_res2 pd_res3 pd_half_sine
-  saw double_saw tri pulse pulse_saw slope alpha1 alpha2 exp
-  fm1 fm2 fm3 fm4 fm5 fm6 fm7 fm8
-  as_saw as_square as_impulse
-  noise pink_noise lp_noise bp_noise)
+(defall va_saw va_tri va_pulse
+        pd_saw pd_square pd_pulse pd_double_sine pd_saw_pulse pd_res1 pd_res2 pd_res3 pd_half_sine
+        saw double_saw tri pulse pulse_saw slope alpha1 alpha2 exp
+        fm1 fm2 fm3 fm4 fm5 fm6 fm7 fm8
+        as_saw as_square as_tri
+        noise pink_noise lp_noise bp_noise)
 
 (defn dcf
   [id & {:as values}]
@@ -37,10 +36,9 @@
 (def filter1 (partial dcf 1))
 (def filter2 (partial dcf 2))
 
-(defall
-  lp_24db lp_18db lp_12db lp_6db hp24db
-  bp_12db bp_18db notch
-  svf_lp svf_hp svf_bp svf_notch)
+(defall lp_24db lp_18db lp_12db lp_6db hp24db bp_12db bp_18db notch
+        svf_lp svf_hp svf_bp svf_notch
+        comb)
 
 (defn lfo
   [id & {:as values}]
@@ -71,8 +69,60 @@
 (def bus_a (partial bus "bus_a"))
 (def bus_b (partial bus "bus_b"))
 
-; TODO mod sources
+; mod sources
+(defall mod_none mod_mod mod_press mod_key mod_velo
+        mod_lfo1 mod_lfo1+ mod_lfo2 mod_lfo2+ mod_lfo3 mod_lfo3+ mod_lfo4 mod_lfo4+
+        mod_env1 mod_env2 mod_env3 mod_env4)
 
-; TODO mod targets
+; mod targets
+(defall mod_no_target
+        mod_osc1_pitch mod_osc1_mod mod_osc1_pwm mod_osc1_amp
+        mod_osc2_pitch mod_osc2_mod mod_osc2_pwm mod_osc2_amp
+        mod_osc3_pitch mod_osc3_mod mod_osc3_pwm mod_osc3_amp
+        mod_osc4_pitch mod_osc4_mod mod_osc4_pwm mod_osc4_amp
+        
+        mod_flt1_freq mod_flt1_q mod_flt1_pan mod_flt1_amp
+        mod_flt2_freq mod_flt2_q mod_flt2_pan mod_flt2_amp
+        
+        mod_lfo1_sp mod_lfo1_amp
+        mod_lfo2_sp mod_lfo2_amp
+        mod_lfo3_sp mod_lfo3_amp
+        mod_lfo4_sp mod_lfo4_amp
+        
+        mod_env1_sp mod_env1_amp
+        mod_env2_sp mod_env2_amp
+        mod_env3_sp mod_env3_amp
+        mod_env4_sp mod_env4_amp
+        
+        mod_bus_a_pan mod_bus_b_pan)
 
-; TODO effects
+(defn modulations
+  [& mods]
+  (apply merge 
+         (for [[[src target amount] idx] (zipmap mods (range 1 20))]
+           {(str "mod" idx "_src") src
+            (str "mod" idx "_target") target
+            (str "mod" idx "_amount") amount})))                 
+        
+; effects
+
+(defn chorus-fx
+  [& {:as values}]
+  (base "chorus"
+        (merge {:on 1} values)))
+
+(defn phaser-fx
+  [& {:as values}]
+  (base "phaser"
+        (merge {:on 1} values)))
+
+(defn delay-fx
+  [& {:as values}]
+  (base "delay"
+        (merge {:on 1} values)))
+
+(defn reverb-fx
+  [& {:as values}]
+  (base "reverb"
+        (merge {:on 1} values)))
+
