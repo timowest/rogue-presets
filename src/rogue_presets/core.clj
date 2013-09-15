@@ -46,27 +46,35 @@
 
 (def two_oscs
   (merge defaults
-         (osc1 :level_a 0.5)
-         (osc2 :level_a 0.5)))
+         (osc1 :level 1 :level_a 0.5)
+         (osc2 :level 1 :level_a 0.5)))
 
 (def four-oscs
   (merge defaults
-         (osc1 :level_a 0.25)
-         (osc2 :level_a 0.25)
-         (osc3 :level_a 0.25)
-         (osc4 :level_a 0.25)))
+         (osc1 :level 1 :level_a 0.25)
+         (osc2 :level 1 :level_a 0.25)
+         (osc3 :level 1 :level_a 0.25)
+         (osc4 :level 1 :level_a 0.25)))
+
+(def four-oscs-ab
+  (merge defaults
+         (osc1 :level 1 :level_a 0.25)
+         (osc2 :level 1 :level_a 0.25)
+         (osc3 :level 1 :level_b 0.25)
+         (osc4 :level 1 :level_b 0.25)))
 
 (defpreset pulse-lead1 "Pulse Lead 1"
   two_oscs
   (osc1 :type pulse :width 0.25 :fine -0.05)
   (osc2 :type pulse :width 0.75 :fine 0.05)
-  (filter1 :freq 220 :type lp_12db :q 0.2)
+  (filter1 :freq 440 :type lp_12db :q 0.2 :level 1)
   (env1 :attack 0.01 :curve 0.7)
   (env2 :attack 0.1 :sustain 0.25 :curve 0.7)
   (modulations [mod_env2 mod_flt1_freq 0.6])
   (reverb-fx))
 
 (defpreset pulse-lead2 "Pulse Lead 2"
+  four-oscs
   (osc1 :type pulse :width 0.4 :fine -0.2)
   (osc2 :type pulse :width 0.5 :fine -0.1)
   (osc3 :type pulse :width 0.6 :fine 0.1)
@@ -74,7 +82,21 @@
   (bus_a :level 0.5)
   (env1 :attack 0.03 :sustain 0.5 :release 1 :curve 0.7))
 
+(defpreset pulse-lead3 "Pulse Lead 3"
+  four-oscs-ab
+  (osc1 :type pulse :width 0.4 :fine -0.2)
+  (osc2 :type pulse :width 0.5 :fine -0.1)
+  (osc3 :type pulse :width 0.6 :fine 0.1)
+  (osc4 :type pulse :width 0.7 :fine 0.2)
+  (filter1 :type svf_lp :freq 440 :q 0.7 :level 0.5 :pan 0.4)
+  (filter2 :type svf_lp :freq 880 :q 0.7 :level 0.5 :pan 0.6)
+  (env1 :attack 0.03 :sustain 0.5 :release 1 :curve 0.7)
+  (env2 :attack 0 :sustain 0.3 :release 0.5 :curve 0.7)
+  (modulations [mod_env2 mod_flt1_freq 1]
+               [mod_env2 mod_flt2_freq 1]))
+
 (defpreset saw-lead1 "Saw Lead 1"
+  four-oscs
   (osc1 :type tri :width 0.95 :fine -0.2)
   (osc2 :type tri :width 0.96 :fine -0.1)
   (osc3 :type tri :width 0.97 :fine 0.1)
@@ -84,8 +106,8 @@
     
 ; pads basses fm percussion effects 
 
-(defn dump-resets
+(defn -main
   []
   (dump "../rogue" 
         basic-saw basic-pulse basic-tri pd-saw pd-square pd-pulse
-        pulse-lead1 pulse-lead2 saw-lead1))
+        pulse-lead1 pulse-lead2 pulse-lead3 saw-lead1))

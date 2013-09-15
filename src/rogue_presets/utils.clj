@@ -14,7 +14,7 @@
 (defn osc
   [id & {:as values}]
   (base (str "osc" id) 
-        (merge {:on 1 :level 1.0} values)))
+        (merge {:on 1} values)))
 
 (def osc1 (partial osc 1))
 (def osc2 (partial osc 2))
@@ -31,7 +31,7 @@
 (defn dcf
   [id & {:as values}]
   (base (str "filter" id) 
-        (merge {:on 1 :level 1.0} values)))
+        (merge {:on 1} values)))
 
 (def filter1 (partial dcf 1))
 (def filter2 (partial dcf 2))
