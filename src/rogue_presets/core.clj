@@ -21,6 +21,25 @@
          (bus_a :level 0.5)
          (osc1 :type osc-type :level 1 :level_a 1)))
 
+(def two-oscs
+  (merge defaults
+         (osc1 :level 1 :level_a 0.5)
+         (osc2 :level 1 :level_a 0.5)))
+
+(def four-oscs
+  (merge defaults
+         (osc1 :level 1 :level_a 0.25)
+         (osc2 :level 1 :level_a 0.25)
+         (osc3 :level 1 :level_a 0.25)
+         (osc4 :level 1 :level_a 0.25)))
+
+(def four-oscs-ab
+  (merge defaults
+         (osc1 :level 1 :level_a 0.25)
+         (osc2 :level 1 :level_a 0.25)
+         (osc3 :level 1 :level_b 0.25)
+         (osc4 :level 1 :level_b 0.25)))
+
 ; basic 
 
 (defpreset basic-saw "Basic Saw"
@@ -44,27 +63,8 @@
 
 ; leads 
 
-(def two_oscs
-  (merge defaults
-         (osc1 :level 1 :level_a 0.5)
-         (osc2 :level 1 :level_a 0.5)))
-
-(def four-oscs
-  (merge defaults
-         (osc1 :level 1 :level_a 0.25)
-         (osc2 :level 1 :level_a 0.25)
-         (osc3 :level 1 :level_a 0.25)
-         (osc4 :level 1 :level_a 0.25)))
-
-(def four-oscs-ab
-  (merge defaults
-         (osc1 :level 1 :level_a 0.25)
-         (osc2 :level 1 :level_a 0.25)
-         (osc3 :level 1 :level_b 0.25)
-         (osc4 :level 1 :level_b 0.25)))
-
 (defpreset lead-pulse1 "Pulse Lead 1"
-  two_oscs
+  two-oscs
   (osc1 :type pulse :width 0.25 :fine -0.05)
   (osc2 :type pulse :width 0.75 :fine 0.05)
   (filter1 :freq 440 :type lp_12db :q 0.2 :level 1)
@@ -121,6 +121,16 @@
                [mod_lfo1 mod_flt1_freq 0.2]
                [mod_lfo1 mod_osc2_amp 0.2]
                [mod_env2 mod_flt1_freq 0.8]))
+
+; fm
+
+(def fm-base
+  (merge defaults
+         (osc1 :type fm1 :level 1)
+         (osc1 :type fm2 :level 1)
+         (osc1 :type fm3 :level 1)
+         (osc1 :type fm4 :level 1)
+         (bus_a :level 0.5)))
 
 ; basses fm percussion effects 
 
