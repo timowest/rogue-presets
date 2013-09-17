@@ -1,13 +1,11 @@
-# rogue-presets
+## rogue-presets
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library designed to create patches for rogue.
 
-## Usage
+### Usage
 
-FIXME
+Define new patches in src/rogue_presets/core.clj and run
 
-## License
-
-Copyright © 2013 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+    lein dump
+    
+to dump them into rogue checkout under ../rogue
