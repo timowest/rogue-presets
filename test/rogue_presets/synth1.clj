@@ -1,4 +1,5 @@
 (ns rogue-presets.synth1
+  (:import java.io.File)
   (:require [clojure.string :as string]
             [clojure.pprint :as pprint]
             [rogue-presets.mappings :refer :all]))
@@ -32,17 +33,17 @@
   (double (/ v 128)))
 
 (defn convert-env
-  [env]
-  (list :attack (:attack env)
-        :decay (:decay env)
-        :sustain (:sustain env)
-        :release (:release env)))
+  [{:keys [attack decay sustain release]}]
+  (list :attack attack
+        :decay decay
+        :sustain sustain
+        :release release))
 
 (defn convert-lfo
-  [lfo]
-  (list :on (:switch lfo)
-        :type (osc2type (:wave lfo))
-        :freq (:speed lfo)))
+  [{:keys [switch wave speed]}]
+  (list :on switch
+        :type (osc2type wave)
+        :freq speed))
 
 (defn convert
   [preset]
@@ -68,10 +69,12 @@
 
 (defn dump-folder
   [path]
-  (doseq [file (file-seq (java.io.File. path))]
+  (doseq [file (file-seq (File. path))]
     (when (.endsWith (.getName file) ".sy1")
-      (let [clj (java.io.File. (.getParentFile file) 
-                              (str (.getName file) ".clj"))
-            txt (pprint->string (load-preset file))]
+      (let [clj (File. (.getParentFile file) 
+                       (str (.getName file) ".clj"))
+            txt (try 
+                  (pprint->string (load-preset file))
+                  (catch Exception e ""))]
         (println (.getPath clj))
         (spit clj txt)))))
