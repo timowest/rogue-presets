@@ -26,7 +26,7 @@
 
 (def osc2type '{1 saw 2 pulse 3 tri 4 noise})
 
-(def filter-type '{0 lp_12db 1 lp_24db 2 hp24db 3 hp24db})
+(def filter-type '{0 lp_12db 1 lp_24db 2 hp_24db 3 hp24_db})
 
 (defn midi->num
   [v]

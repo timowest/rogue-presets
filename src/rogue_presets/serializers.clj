@@ -47,7 +47,7 @@
       ".")))
                  
 (defn dump
-  [path & presets]
+  [path presets]
   (let [presets-txt (str presets-intro
                          "\n\n"
                          (string/join "\n\n"

@@ -11,7 +11,7 @@
   (into {} (for [[k v] options]
              [(str id "_" (name k)) v])))
   
-(defn osc
+(defn- osc
   [id & {:as values}]
   (base (str "osc" id) 
         (merge {:on 1} values)))
@@ -28,7 +28,7 @@
         as_saw as_square as_tri
         noise pink_noise lp_noise bp_noise)
 
-(defn dcf
+(defn- dcf
   [id & {:as values}]
   (base (str "filter" id) 
         (merge {:on 1} values)))
@@ -40,7 +40,7 @@
         svf_lp svf_hp svf_bp svf_notch
         comb)
 
-(defn lfo
+(defn- lfo
   [id & {:as values}]
   (base (str "lfo" id) 
         (merge {:on 1} values)))
@@ -52,7 +52,7 @@
 
 (defall lfo_sin lfo_tri lfo_saw lfo_pulse lfo_sh lfo_noise)
 
-(defn env
+(defn- env
   [id & {:as values}]
   (base (str "env" id) 
         (merge {:on 1} values)))
@@ -125,4 +125,44 @@
   [& {:as values}]
   (base "reverb"
         (merge {:on 1} values)))
+
+; stubs
+
+(def defaults 
+  (let [text (slurp "resources/rogue.ttl")
+        keys (map second (re-seq #"lv2:symbol \"([\w_]+)\"" text))
+        values (map second (re-seq #"lv2:default ([\d\.]+)" text))]
+    (zipmap (drop 3 keys) values)))
+
+(defmacro defpreset
+  [name label & contents]
+  (list 'def name
+        (list 'with-meta 
+              (cons 'merge contents)
+               {:name (str name) :label label})))
+
+(defn basic-osc
+  [osc-type]
+  (merge defaults 
+         (bus_a :level 0.5)
+         (osc1 :type osc-type :level 1 :level_a 1)))
+
+(def two-oscs
+  (merge defaults
+         (osc1 :level 1 :level_a 0.5)
+         (osc2 :level 1 :level_a 0.5)))
+
+(def four-oscs
+  (merge defaults
+         (osc1 :level 1 :level_a 0.25)
+         (osc2 :level 1 :level_a 0.25)
+         (osc3 :level 1 :level_a 0.25)
+         (osc4 :level 1 :level_a 0.25)))
+
+(def four-oscs-ab
+  (merge defaults
+         (osc1 :level 1 :level_a 0.25)
+         (osc2 :level 1 :level_a 0.25)
+         (osc3 :level 1 :level_b 0.25)
+         (osc4 :level 1 :level_b 0.25)))
 
