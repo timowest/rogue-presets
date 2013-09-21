@@ -23,3 +23,16 @@
   (env2 :attack 0 :sustain 0.3 :release 0.5 :curve 0.7)
   (modulations [mod_env2 mod_flt1_freq 1]
                [mod_env2 mod_flt2_freq 1]))
+
+; acoustic
+
+(defpreset brass "Brass"
+  defaults
+  (osc1 :type saw :level 1 :level_a 0.5)
+  (osc2 :type saw :fine 0.01 :level 1 :level_a 1)
+  (filter1 :type svf_lp :freq 880 :key_to_f 1 :level 1)
+  (env1 :attack 0.01 :decay 1 :sustain 0.5 :release 0.5 :curve 0.7)
+  (env2 :attack 0.1  :release 0.5 :curve 0.7)
+  (modulations [mod_env2 mod_flt1_freq 1]
+               [mod_env2 mod_flt1_freq 1]))
+  
