@@ -30,9 +30,24 @@
   defaults
   (osc1 :type saw :level 1 :level_a 0.5)
   (osc2 :type saw :fine 0.01 :level 1 :level_a 1)
-  (filter1 :type svf_lp :freq 880 :key_to_f 1 :level 1)
+  (filter1 :type lp_24db :freq 880 :key_to_f 1 :level 1)
   (env1 :attack 0.01 :decay 1 :sustain 0.5 :release 0.5 :curve 0.7)
   (env2 :attack 0.1  :release 0.5 :curve 0.7)
-  (modulations [mod_env2 mod_flt1_freq 1]
+  (modulations [mod_env2 mod_flt1_freq 1]                 
                [mod_env2 mod_flt1_freq 1]))
+
+(defpreset brass2 "Brass 2"
+  defaults
+  (osc1 :type saw :level 1 :level_a 0.5)
+  (osc2 :type saw :level 1 :level_a 0.5 :fine 0.1)
+  (osc3 :type saw :level 1 :level_b 0.5)
+  (osc4 :type saw :level 1 :level_b 0.5 :fine -0.1)
+  (filter1 :type lp_24db :level 1 :pan 0)
+  (filter2 :type lp_24db :level 1 :pan 1 :source 1) ; bus b input
+  (env1 :attack 0.03 :curve 0.7)
+  (env2 :attack 0.1 :curve 0.7)
+  (modulations [mod_env2 mod_flt1_freq 1]
+               [mod_env2 mod_flt2_freq 1])
+  (chorus-fx)
+  (reverb-fx))
   
