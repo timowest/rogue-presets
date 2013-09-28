@@ -5,7 +5,7 @@
   defaults
   (osc1 :type fm1 :level 1)
   (osc2 :type saw :level 1 :coarse 12 :out_mod 2 :level_a 1) ; RM modulated
-  (filter1 :type svf_lp :freq 220 :q 0.3 :level 1)
+  (filter1 :type lp_24db :freq 220 :q 0.3 :level 1)
   (env1 :attack 0.3 :sustain 0.6 :release 1.2 :curve 0.7)
   (env2 :attack 1 :sustain 1 :release 1.22 :curve 0.7)
   (lfo1 :type lfo_tri :freq 2)

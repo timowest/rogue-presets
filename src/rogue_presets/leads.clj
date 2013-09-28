@@ -24,7 +24,7 @@
   (modulations [mod_env2 mod_flt1_freq 1]
                [mod_env2 mod_flt2_freq 1]))
 
-; acoustic
+; acoustic (TODO move to own ns)
 
 (defpreset brass "Brass"
   defaults
@@ -50,4 +50,17 @@
                [mod_env2 mod_flt2_freq 1])
   (chorus-fx)
   (reverb-fx))
+
+(defpreset harpsichord "Harpsichord"
+  defaults
+  (osc1 :type pulse :width 0.4 :level 1 :level_a 0.6)
+  (osc2 :type saw :coarse 12 :level 1 :level_a 0.4)
+  (filter1 :type lp_24db :freq 2400 :key_to_f 0.5 :level 1)
+  (env1 :attack 0.01 :decay 1 :sustain 0 :release 1 :curve 0.7)
+  (env2 :attack 0 :decay 1 :sustain 0 :release 1 :curve 0.7)
+  (modulations [mod_env2 mod_flt1_freq 1])
+  (chorus-fx)
+  (reverb-fx))
+
+
   
