@@ -36,7 +36,8 @@
 (def filter1 (partial dcf 1))
 (def filter2 (partial dcf 2))
 
-(defall lp_24db lp_18db lp_12db lp_6db hp24db bp_12db bp_18db notch
+(defall lp_24db hp_24db bp_24db lp_12db hp_12db bp_12db 
+        moog_24db
         svf_lp svf_hp svf_bp svf_notch
         comb)
 
