@@ -26,6 +26,7 @@
         saw double_saw tri pulse pulse_saw slope alpha1 alpha2 exp
         fm1 fm2 fm3 fm4 fm5 fm6 fm7 fm8
         as_saw as_square as_tri
+        supersaw supersquare supersaw2 supersquare2
         noise pink_noise lp_noise bp_noise)
 
 (defn- dcf
