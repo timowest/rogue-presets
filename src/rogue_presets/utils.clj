@@ -134,7 +134,13 @@
   (let [text (slurp "resources/rogue.ttl")
         keys (map second (re-seq #"lv2:symbol \"([\w_]+)\"" text))
         values (map second (re-seq #"lv2:default ([\d\.]+)" text))]
-    (zipmap (drop 3 keys) values)))
+    (merge 
+      (zipmap (drop 3 keys) values)
+      {"osc1_level" 0.0
+       "osc1_level_a" 0.0
+       "filter1_on" 0.0
+       "filter1_level" 0.0
+       "lfo1_on" 0.0})))
 
 (defmacro defpreset
   [name label & contents]
