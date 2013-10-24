@@ -32,7 +32,7 @@
 
 (defn- port
   [name value]
-  (str "[ lv2:symbol \"" name "\" ; pset:value " value " ]"))
+  (str "[ lv2:symbol \"" name "\" ; pset:value " (double value) " ]"))
 
 (defn serialize
   ([preset]

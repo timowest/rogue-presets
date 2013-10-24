@@ -133,7 +133,8 @@
 (def defaults 
   (let [text (slurp "resources/rogue.ttl")
         keys (map second (re-seq #"lv2:symbol \"([\w_]+)\"" text))
-        values (map second (re-seq #"lv2:default ([\d\.]+)" text))]
+        values (map (comp #(Double/parseDouble %) second) 
+                    (re-seq #"lv2:default ([\d\.]+)" text))]
     (merge 
       (zipmap (drop 3 keys) values)
       {"osc1_level" 0.0
