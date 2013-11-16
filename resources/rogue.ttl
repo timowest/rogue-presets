@@ -61,9 +61,9 @@
     lv2:index 3;
     lv2:symbol "osc1_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -71,9 +71,9 @@
     lv2:index 4;
     lv2:symbol "osc1_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 39;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 39.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -81,8 +81,8 @@
     lv2:index 5;
     lv2:symbol "osc1_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -90,8 +90,8 @@
     lv2:index 6;
     lv2:symbol "osc1_free";
     lv2:name "free";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -99,9 +99,9 @@
     lv2:index 7;
     lv2:symbol "osc1_tracking";
     lv2:name "tracking";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -109,18 +109,18 @@
     lv2:index 8;
     lv2:symbol "osc1_ratio";
     lv2:name "ratio";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 16.0;
-    lv2:default 1
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 9;
     lv2:symbol "osc1_coarse";
     lv2:name "coarse";
-    lv2:minimum -48;
-    lv2:maximum 48;
-    lv2:default 0;
+    lv2:minimum -48.0;
+    lv2:maximum 48.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -130,14 +130,14 @@
     lv2:name "fine";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 11;
     lv2:symbol "osc1_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -146,7 +146,7 @@
     lv2:index 12;
     lv2:symbol "osc1_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -155,36 +155,36 @@
     lv2:index 13;
     lv2:symbol "osc1_level_a";
     lv2:name "level_a";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 1
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 14;
     lv2:symbol "osc1_level_b";
     lv2:name "level_b";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 15;
     lv2:symbol "osc1_level";
     lv2:name "level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 1
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 16;
     lv2:symbol "osc1_input";
     lv2:name "input";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -192,17 +192,17 @@
     lv2:index 17;
     lv2:symbol "osc1_pm";
     lv2:name "pm";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 10.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 18;
     lv2:symbol "osc1_sync";
     lv2:name "sync";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -210,9 +210,9 @@
     lv2:index 19;
     lv2:symbol "osc1_input2";
     lv2:name "input2";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -220,9 +220,9 @@
     lv2:index 20;
     lv2:symbol "osc1_out_mod";
     lv2:name "out_mod";
-    lv2:minimum 0;
-    lv2:maximum 3;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 3.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -230,8 +230,8 @@
     lv2:index 21;
     lv2:symbol "osc2_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -239,9 +239,9 @@
     lv2:index 22;
     lv2:symbol "osc2_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 39;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 39.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -249,8 +249,8 @@
     lv2:index 23;
     lv2:symbol "osc2_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -258,8 +258,8 @@
     lv2:index 24;
     lv2:symbol "osc2_free";
     lv2:name "free";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -267,9 +267,9 @@
     lv2:index 25;
     lv2:symbol "osc2_tracking";
     lv2:name "tracking";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -277,18 +277,18 @@
     lv2:index 26;
     lv2:symbol "osc2_ratio";
     lv2:name "ratio";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 16.0;
-    lv2:default 1
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 27;
     lv2:symbol "osc2_coarse";
     lv2:name "coarse";
-    lv2:minimum -48;
-    lv2:maximum 48;
-    lv2:default 0;
+    lv2:minimum -48.0;
+    lv2:maximum 48.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -298,14 +298,14 @@
     lv2:name "fine";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 29;
     lv2:symbol "osc2_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -314,7 +314,7 @@
     lv2:index 30;
     lv2:symbol "osc2_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -323,36 +323,36 @@
     lv2:index 31;
     lv2:symbol "osc2_level_a";
     lv2:name "level_a";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 32;
     lv2:symbol "osc2_level_b";
     lv2:name "level_b";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 33;
     lv2:symbol "osc2_level";
     lv2:name "level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 34;
     lv2:symbol "osc2_input";
     lv2:name "input";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -360,17 +360,17 @@
     lv2:index 35;
     lv2:symbol "osc2_pm";
     lv2:name "pm";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 10.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 36;
     lv2:symbol "osc2_sync";
     lv2:name "sync";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -378,9 +378,9 @@
     lv2:index 37;
     lv2:symbol "osc2_input2";
     lv2:name "input2";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -388,9 +388,9 @@
     lv2:index 38;
     lv2:symbol "osc2_out_mod";
     lv2:name "out_mod";
-    lv2:minimum 0;
-    lv2:maximum 3;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 3.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -398,8 +398,8 @@
     lv2:index 39;
     lv2:symbol "osc3_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -407,9 +407,9 @@
     lv2:index 40;
     lv2:symbol "osc3_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 39;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 39.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -417,8 +417,8 @@
     lv2:index 41;
     lv2:symbol "osc3_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -426,8 +426,8 @@
     lv2:index 42;
     lv2:symbol "osc3_free";
     lv2:name "free";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -435,9 +435,9 @@
     lv2:index 43;
     lv2:symbol "osc3_tracking";
     lv2:name "tracking";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -445,18 +445,18 @@
     lv2:index 44;
     lv2:symbol "osc3_ratio";
     lv2:name "ratio";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 16.0;
-    lv2:default 1
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 45;
     lv2:symbol "osc3_coarse";
     lv2:name "coarse";
-    lv2:minimum -48;
-    lv2:maximum 48;
-    lv2:default 0;
+    lv2:minimum -48.0;
+    lv2:maximum 48.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -466,14 +466,14 @@
     lv2:name "fine";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 47;
     lv2:symbol "osc3_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -482,7 +482,7 @@
     lv2:index 48;
     lv2:symbol "osc3_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -491,36 +491,36 @@
     lv2:index 49;
     lv2:symbol "osc3_level_a";
     lv2:name "level_a";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 50;
     lv2:symbol "osc3_level_b";
     lv2:name "level_b";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 51;
     lv2:symbol "osc3_level";
     lv2:name "level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 52;
     lv2:symbol "osc3_input";
     lv2:name "input";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -528,17 +528,17 @@
     lv2:index 53;
     lv2:symbol "osc3_pm";
     lv2:name "pm";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 10.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 54;
     lv2:symbol "osc3_sync";
     lv2:name "sync";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -546,9 +546,9 @@
     lv2:index 55;
     lv2:symbol "osc3_input2";
     lv2:name "input2";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -556,9 +556,9 @@
     lv2:index 56;
     lv2:symbol "osc3_out_mod";
     lv2:name "out_mod";
-    lv2:minimum 0;
-    lv2:maximum 3;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 3.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -566,8 +566,8 @@
     lv2:index 57;
     lv2:symbol "osc4_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -575,9 +575,9 @@
     lv2:index 58;
     lv2:symbol "osc4_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 39;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 39.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -585,8 +585,8 @@
     lv2:index 59;
     lv2:symbol "osc4_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -594,8 +594,8 @@
     lv2:index 60;
     lv2:symbol "osc4_free";
     lv2:name "free";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -603,9 +603,9 @@
     lv2:index 61;
     lv2:symbol "osc4_tracking";
     lv2:name "tracking";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -613,18 +613,18 @@
     lv2:index 62;
     lv2:symbol "osc4_ratio";
     lv2:name "ratio";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 16.0;
-    lv2:default 1
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 63;
     lv2:symbol "osc4_coarse";
     lv2:name "coarse";
-    lv2:minimum -48;
-    lv2:maximum 48;
-    lv2:default 0;
+    lv2:minimum -48.0;
+    lv2:maximum 48.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -634,14 +634,14 @@
     lv2:name "fine";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 65;
     lv2:symbol "osc4_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -650,7 +650,7 @@
     lv2:index 66;
     lv2:symbol "osc4_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -659,36 +659,36 @@
     lv2:index 67;
     lv2:symbol "osc4_level_a";
     lv2:name "level_a";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 68;
     lv2:symbol "osc4_level_b";
     lv2:name "level_b";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 69;
     lv2:symbol "osc4_level";
     lv2:name "level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 70;
     lv2:symbol "osc4_input";
     lv2:name "input";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -696,17 +696,17 @@
     lv2:index 71;
     lv2:symbol "osc4_pm";
     lv2:name "pm";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 10.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 72;
     lv2:symbol "osc4_sync";
     lv2:name "sync";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -714,9 +714,9 @@
     lv2:index 73;
     lv2:symbol "osc4_input2";
     lv2:name "input2";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -724,9 +724,9 @@
     lv2:index 74;
     lv2:symbol "osc4_out_mod";
     lv2:name "out_mod";
-    lv2:minimum 0;
-    lv2:maximum 3;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 3.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -734,9 +734,9 @@
     lv2:index 75;
     lv2:symbol "filter1_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -744,9 +744,9 @@
     lv2:index 76;
     lv2:symbol "filter1_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 11;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 11.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -754,9 +754,9 @@
     lv2:index 77;
     lv2:symbol "filter1_source";
     lv2:name "source";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -764,7 +764,7 @@
     lv2:index 78;
     lv2:symbol "filter1_freq";
     lv2:name "freq";
-    lv2:minimum 0;
+    lv2:minimum 30.0;
     lv2:maximum 10000.0;
     lv2:default 440.0
   ]
@@ -773,34 +773,34 @@
     lv2:index 79;
     lv2:symbol "filter1_q";
     lv2:name "q";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 80;
     lv2:symbol "filter1_distortion";
     lv2:name "distortion";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 81;
     lv2:symbol "filter1_level";
     lv2:name "level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 1
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 82;
     lv2:symbol "filter1_pan";
     lv2:name "pan";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -809,26 +809,26 @@
     lv2:index 83;
     lv2:symbol "filter1_key_to_f";
     lv2:name "key_to_f";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 84;
     lv2:symbol "filter1_vel_to_f";
     lv2:name "vel_to_f";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 85;
     lv2:symbol "filter2_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -836,9 +836,9 @@
     lv2:index 86;
     lv2:symbol "filter2_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 11;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 11.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -846,9 +846,9 @@
     lv2:index 87;
     lv2:symbol "filter2_source";
     lv2:name "source";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -856,7 +856,7 @@
     lv2:index 88;
     lv2:symbol "filter2_freq";
     lv2:name "freq";
-    lv2:minimum 0;
+    lv2:minimum 30.0;
     lv2:maximum 10000.0;
     lv2:default 440.0
   ]
@@ -865,34 +865,34 @@
     lv2:index 89;
     lv2:symbol "filter2_q";
     lv2:name "q";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 90;
     lv2:symbol "filter2_distortion";
     lv2:name "distortion";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 91;
     lv2:symbol "filter2_level";
     lv2:name "level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 92;
     lv2:symbol "filter2_pan";
     lv2:name "pan";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -901,27 +901,27 @@
     lv2:index 93;
     lv2:symbol "filter2_key_to_f";
     lv2:name "key_to_f";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 94;
     lv2:symbol "filter2_vel_to_f";
     lv2:name "vel_to_f";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 95;
     lv2:symbol "lfo1_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -929,9 +929,9 @@
     lv2:index 96;
     lv2:symbol "lfo1_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 4;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 4.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -939,8 +939,8 @@
     lv2:index 97;
     lv2:symbol "lfo1_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -948,9 +948,9 @@
     lv2:index 98;
     lv2:symbol "lfo1_reset_type";
     lv2:name "reset_type";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -958,7 +958,7 @@
     lv2:index 99;
     lv2:symbol "lfo1_freq";
     lv2:name "freq";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 50.0;
     lv2:default 10.0
   ]
@@ -967,7 +967,7 @@
     lv2:index 100;
     lv2:symbol "lfo1_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -976,7 +976,7 @@
     lv2:index 101;
     lv2:symbol "lfo1_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -985,17 +985,17 @@
     lv2:index 102;
     lv2:symbol "lfo1_humanize";
     lv2:name "humanize";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 103;
     lv2:symbol "lfo2_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1003,9 +1003,9 @@
     lv2:index 104;
     lv2:symbol "lfo2_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 4;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 4.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1013,8 +1013,8 @@
     lv2:index 105;
     lv2:symbol "lfo2_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1022,9 +1022,9 @@
     lv2:index 106;
     lv2:symbol "lfo2_reset_type";
     lv2:name "reset_type";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1032,7 +1032,7 @@
     lv2:index 107;
     lv2:symbol "lfo2_freq";
     lv2:name "freq";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 50.0;
     lv2:default 10.0
   ]
@@ -1041,7 +1041,7 @@
     lv2:index 108;
     lv2:symbol "lfo2_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -1050,7 +1050,7 @@
     lv2:index 109;
     lv2:symbol "lfo2_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -1059,17 +1059,17 @@
     lv2:index 110;
     lv2:symbol "lfo2_humanize";
     lv2:name "humanize";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 111;
     lv2:symbol "lfo3_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1077,9 +1077,9 @@
     lv2:index 112;
     lv2:symbol "lfo3_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 4;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 4.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1087,8 +1087,8 @@
     lv2:index 113;
     lv2:symbol "lfo3_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1096,9 +1096,9 @@
     lv2:index 114;
     lv2:symbol "lfo3_reset_type";
     lv2:name "reset_type";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1106,7 +1106,7 @@
     lv2:index 115;
     lv2:symbol "lfo3_freq";
     lv2:name "freq";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 50.0;
     lv2:default 10.0
   ]
@@ -1115,7 +1115,7 @@
     lv2:index 116;
     lv2:symbol "lfo3_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -1124,7 +1124,7 @@
     lv2:index 117;
     lv2:symbol "lfo3_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -1133,17 +1133,17 @@
     lv2:index 118;
     lv2:symbol "lfo3_humanize";
     lv2:name "humanize";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 119;
     lv2:symbol "lfo4_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1151,9 +1151,9 @@
     lv2:index 120;
     lv2:symbol "lfo4_type";
     lv2:name "type";
-    lv2:minimum 0;
-    lv2:maximum 4;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 4.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1161,8 +1161,8 @@
     lv2:index 121;
     lv2:symbol "lfo4_inv";
     lv2:name "inv";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1170,9 +1170,9 @@
     lv2:index 122;
     lv2:symbol "lfo4_reset_type";
     lv2:name "reset_type";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1180,7 +1180,7 @@
     lv2:index 123;
     lv2:symbol "lfo4_freq";
     lv2:name "freq";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 50.0;
     lv2:default 10.0
   ]
@@ -1189,7 +1189,7 @@
     lv2:index 124;
     lv2:symbol "lfo4_start";
     lv2:name "start";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.0
   ]
@@ -1198,7 +1198,7 @@
     lv2:index 125;
     lv2:symbol "lfo4_width";
     lv2:name "width";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -1207,18 +1207,18 @@
     lv2:index 126;
     lv2:symbol "lfo4_humanize";
     lv2:name "humanize";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 127;
     lv2:symbol "env1_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1226,16 +1226,16 @@
     lv2:index 128;
     lv2:symbol "env1_pre_delay";
     lv2:name "pre_delay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 129;
     lv2:symbol "env1_attack";
     lv2:name "attack";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.01
   ]
@@ -1244,16 +1244,16 @@
     lv2:index 130;
     lv2:symbol "env1_hold";
     lv2:name "hold";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 131;
     lv2:symbol "env1_decay";
     lv2:name "decay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1262,7 +1262,7 @@
     lv2:index 132;
     lv2:symbol "env1_sustain";
     lv2:name "sustain";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.8
   ]
@@ -1271,7 +1271,7 @@
     lv2:index 133;
     lv2:symbol "env1_release";
     lv2:name "release";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1280,7 +1280,7 @@
     lv2:index 134;
     lv2:symbol "env1_curve";
     lv2:name "curve";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -1289,8 +1289,8 @@
     lv2:index 135;
     lv2:symbol "env1_retrigger";
     lv2:name "retrigger";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1298,8 +1298,8 @@
     lv2:index 136;
     lv2:symbol "env2_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1307,16 +1307,16 @@
     lv2:index 137;
     lv2:symbol "env2_pre_delay";
     lv2:name "pre_delay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 138;
     lv2:symbol "env2_attack";
     lv2:name "attack";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.01
   ]
@@ -1325,16 +1325,16 @@
     lv2:index 139;
     lv2:symbol "env2_hold";
     lv2:name "hold";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 140;
     lv2:symbol "env2_decay";
     lv2:name "decay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1343,7 +1343,7 @@
     lv2:index 141;
     lv2:symbol "env2_sustain";
     lv2:name "sustain";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.8
   ]
@@ -1352,7 +1352,7 @@
     lv2:index 142;
     lv2:symbol "env2_release";
     lv2:name "release";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1361,7 +1361,7 @@
     lv2:index 143;
     lv2:symbol "env2_curve";
     lv2:name "curve";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -1370,8 +1370,8 @@
     lv2:index 144;
     lv2:symbol "env2_retrigger";
     lv2:name "retrigger";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1379,8 +1379,8 @@
     lv2:index 145;
     lv2:symbol "env3_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1388,16 +1388,16 @@
     lv2:index 146;
     lv2:symbol "env3_pre_delay";
     lv2:name "pre_delay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 147;
     lv2:symbol "env3_attack";
     lv2:name "attack";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.01
   ]
@@ -1406,16 +1406,16 @@
     lv2:index 148;
     lv2:symbol "env3_hold";
     lv2:name "hold";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 149;
     lv2:symbol "env3_decay";
     lv2:name "decay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1424,7 +1424,7 @@
     lv2:index 150;
     lv2:symbol "env3_sustain";
     lv2:name "sustain";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.8
   ]
@@ -1433,7 +1433,7 @@
     lv2:index 151;
     lv2:symbol "env3_release";
     lv2:name "release";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1442,7 +1442,7 @@
     lv2:index 152;
     lv2:symbol "env3_curve";
     lv2:name "curve";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -1451,8 +1451,8 @@
     lv2:index 153;
     lv2:symbol "env3_retrigger";
     lv2:name "retrigger";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1460,8 +1460,8 @@
     lv2:index 154;
     lv2:symbol "env4_on";
     lv2:name "on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1469,16 +1469,16 @@
     lv2:index 155;
     lv2:symbol "env4_pre_delay";
     lv2:name "pre_delay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 156;
     lv2:symbol "env4_attack";
     lv2:name "attack";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.01
   ]
@@ -1487,16 +1487,16 @@
     lv2:index 157;
     lv2:symbol "env4_hold";
     lv2:name "hold";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 158;
     lv2:symbol "env4_decay";
     lv2:name "decay";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1505,7 +1505,7 @@
     lv2:index 159;
     lv2:symbol "env4_sustain";
     lv2:name "sustain";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.8
   ]
@@ -1514,7 +1514,7 @@
     lv2:index 160;
     lv2:symbol "env4_release";
     lv2:name "release";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
     lv2:default 0.5
   ]
@@ -1523,7 +1523,7 @@
     lv2:index 161;
     lv2:symbol "env4_curve";
     lv2:name "curve";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -1532,8 +1532,8 @@
     lv2:index 162;
     lv2:symbol "env4_retrigger";
     lv2:name "retrigger";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -1541,9 +1541,9 @@
     lv2:index 163;
     lv2:symbol "mod1_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1551,9 +1551,9 @@
     lv2:index 164;
     lv2:symbol "mod1_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1563,16 +1563,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 166;
     lv2:symbol "mod2_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1580,9 +1580,9 @@
     lv2:index 167;
     lv2:symbol "mod2_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1592,16 +1592,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 169;
     lv2:symbol "mod3_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1609,9 +1609,9 @@
     lv2:index 170;
     lv2:symbol "mod3_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1621,16 +1621,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 172;
     lv2:symbol "mod4_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1638,9 +1638,9 @@
     lv2:index 173;
     lv2:symbol "mod4_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1650,16 +1650,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 175;
     lv2:symbol "mod5_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1667,9 +1667,9 @@
     lv2:index 176;
     lv2:symbol "mod5_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1679,16 +1679,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 178;
     lv2:symbol "mod6_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1696,9 +1696,9 @@
     lv2:index 179;
     lv2:symbol "mod6_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1708,16 +1708,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 181;
     lv2:symbol "mod7_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1725,9 +1725,9 @@
     lv2:index 182;
     lv2:symbol "mod7_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1737,16 +1737,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 184;
     lv2:symbol "mod8_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1754,9 +1754,9 @@
     lv2:index 185;
     lv2:symbol "mod8_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1766,16 +1766,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 187;
     lv2:symbol "mod9_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1783,9 +1783,9 @@
     lv2:index 188;
     lv2:symbol "mod9_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1795,16 +1795,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 190;
     lv2:symbol "mod10_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1812,9 +1812,9 @@
     lv2:index 191;
     lv2:symbol "mod10_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1824,16 +1824,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 193;
     lv2:symbol "mod11_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1841,9 +1841,9 @@
     lv2:index 194;
     lv2:symbol "mod11_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1853,16 +1853,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 196;
     lv2:symbol "mod12_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1870,9 +1870,9 @@
     lv2:index 197;
     lv2:symbol "mod12_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1882,16 +1882,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 199;
     lv2:symbol "mod13_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1899,9 +1899,9 @@
     lv2:index 200;
     lv2:symbol "mod13_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1911,16 +1911,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 202;
     lv2:symbol "mod14_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1928,9 +1928,9 @@
     lv2:index 203;
     lv2:symbol "mod14_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1940,16 +1940,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 205;
     lv2:symbol "mod15_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1957,9 +1957,9 @@
     lv2:index 206;
     lv2:symbol "mod15_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1969,16 +1969,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 208;
     lv2:symbol "mod16_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1986,9 +1986,9 @@
     lv2:index 209;
     lv2:symbol "mod16_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -1998,16 +1998,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 211;
     lv2:symbol "mod17_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2015,9 +2015,9 @@
     lv2:index 212;
     lv2:symbol "mod17_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2027,16 +2027,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 214;
     lv2:symbol "mod18_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2044,9 +2044,9 @@
     lv2:index 215;
     lv2:symbol "mod18_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2056,16 +2056,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 217;
     lv2:symbol "mod19_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2073,9 +2073,9 @@
     lv2:index 218;
     lv2:symbol "mod19_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2085,16 +2085,16 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 220;
     lv2:symbol "mod20_src";
     lv2:name "src";
-    lv2:minimum 0;
-    lv2:maximum 16;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 16.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2102,9 +2102,9 @@
     lv2:index 221;
     lv2:symbol "mod20_target";
     lv2:name "target";
-    lv2:minimum 0;
-    lv2:maximum 43;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 43.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2114,23 +2114,23 @@
     lv2:name "amount";
     lv2:minimum -1.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 223;
     lv2:symbol "bus_a_level";
     lv2:name "bus_a_level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 224;
     lv2:symbol "bus_a_pan";
     lv2:name "bus_a_pan";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -2139,16 +2139,16 @@
     lv2:index 225;
     lv2:symbol "bus_b_level";
     lv2:name "bus_b_level";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 226;
     lv2:symbol "bus_b_pan";
     lv2:name "bus_b_pan";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -2157,7 +2157,7 @@
     lv2:index 227;
     lv2:symbol "volume";
     lv2:name "volume";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 1.0;
     lv2:default 0.5
   ]
@@ -2166,9 +2166,9 @@
     lv2:index 228;
     lv2:symbol "play_mode";
     lv2:name "play_mode";
-    lv2:minimum 0;
-    lv2:maximum 2;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:maximum 2.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:integer
   ]
  , [
@@ -2176,143 +2176,140 @@
     lv2:index 229;
     lv2:symbol "glide_time";
     lv2:name "glide_time";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 5.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 230;
     lv2:symbol "pitchbend_range";
     lv2:name "pitchbend_range";
-    lv2:minimum 0;
+    lv2:minimum 0.0;
     lv2:maximum 24.0;
-    lv2:default 0
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 231;
     lv2:symbol "chorus_on";
     lv2:name "chorus_on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 232;
-    lv2:symbol "chorus_t";
-    lv2:name "chorus_t";
-    lv2:minimum 2.5;
-    lv2:maximum 25;
-    lv2:default 8.1;
-    lv2:portProperty lv2:integer
+    lv2:symbol "chorus_delay";
+    lv2:name "chorus_delay";
+    lv2:minimum 0.001;
+    lv2:maximum 0.05;
+    lv2:default 0.02
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 233;
-    lv2:symbol "chorus_width";
-    lv2:name "chorus_width";
-    lv2:minimum 0.5;
-    lv2:maximum 10;
-    lv2:default 1;
-    lv2:portProperty lv2:integer
+    lv2:symbol "chorus_amount";
+    lv2:name "chorus_amount";
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 0.3
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 234;
     lv2:symbol "chorus_rate";
     lv2:name "chorus_rate";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.25;
+    lv2:minimum 0.0;
+    lv2:maximum 10.0;
+    lv2:default 0.2;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 235;
-    lv2:symbol "chorus_blend";
-    lv2:name "chorus_blend";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.25;
+    lv2:symbol "chorus_depth";
+    lv2:name "chorus_depth";
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 0.3;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 236;
-    lv2:symbol "chorus_feedforward";
-    lv2:name "chorus_feedforward";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
-    lv2:portProperty lv2:integer
+    lv2:symbol "chorus_feedback";
+    lv2:name "chorus_feedback";
+    lv2:minimum 0.0;
+    lv2:maximum 0.99;
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 237;
-    lv2:symbol "chorus_feedback";
-    lv2:name "chorus_feedback";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.5;
-    lv2:portProperty lv2:integer
-  ]
- , [
-    a lv2:ControlPort, lv2:InputPort;
-    lv2:index 238;
     lv2:symbol "phaser_on";
     lv2:name "phaser_on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
+    lv2:index 238;
+    lv2:symbol "phaser_min_freq";
+    lv2:name "phaser_min_freq";
+    lv2:minimum 300.0;
+    lv2:maximum 10000.0;
+    lv2:default 300.0;
+    lv2:portProperty lv2:integer
+  ]
+ , [
+    a lv2:ControlPort, lv2:InputPort;
     lv2:index 239;
-    lv2:symbol "phaser_rate";
-    lv2:name "phaser_rate";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.25;
+    lv2:symbol "phaser_max_freq";
+    lv2:name "phaser_max_freq";
+    lv2:minimum 300.0;
+    lv2:maximum 10000.0;
+    lv2:default 1000.0;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 240;
-    lv2:symbol "phaser_depth";
-    lv2:name "phaser_depth";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
+    lv2:symbol "phaser_rate";
+    lv2:name "phaser_rate";
+    lv2:minimum 0.0;
+    lv2:maximum 10.0;
+    lv2:default 1.0;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 241;
-    lv2:symbol "phaser_spread";
-    lv2:name "phaser_spread";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.5;
+    lv2:symbol "phaser_depth";
+    lv2:name "phaser_depth";
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 0.3;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 242;
-    lv2:symbol "phaser_resonance";
-    lv2:name "phaser_resonance";
-    lv2:minimum 0;
-    lv2:default 0;
-    lv2:portProperty lv2:toggled
+    lv2:symbol "phaser_feedback";
+    lv2:name "phaser_feedback";
+    lv2:minimum 0.0;
+    lv2:maximum 0.99;
+    lv2:default 0.5
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 243;
     lv2:symbol "delay_on";
     lv2:name "delay_on";
-    lv2:minimum 0;
-    lv2:default 0;
+    lv2:minimum 0.0;
+    lv2:default 0.0;
     lv2:portProperty lv2:toggled
   ]
  , [
@@ -2320,108 +2317,123 @@
     lv2:index 244;
     lv2:symbol "delay_bpm";
     lv2:name "delay_bpm";
-    lv2:minimum 30;
-    lv2:maximum 164;
-    lv2:default 97;
+    lv2:minimum 30.0;
+    lv2:maximum 164.0;
+    lv2:default 97.0;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 245;
-    lv2:symbol "delay_divider";
-    lv2:name "delay_divider";
-    lv2:minimum 2;
-    lv2:maximum 4;
-    lv2:default 3;
-    lv2:portProperty lv2:integer
+    lv2:symbol "delay_divider_l";
+    lv2:name "delay_divider_l";
+    lv2:minimum 0.01;
+    lv2:maximum 1.0;
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 246;
-    lv2:symbol "delay_feedback";
-    lv2:name "delay_feedback";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.75;
-    lv2:portProperty lv2:integer
+    lv2:symbol "delay_divider_r";
+    lv2:name "delay_divider_r";
+    lv2:minimum 0.01;
+    lv2:maximum 1.0;
+    lv2:default 1.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 247;
-    lv2:symbol "delay_dry";
-    lv2:name "delay_dry";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.5;
+    lv2:symbol "delay_depth";
+    lv2:name "delay_depth";
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 0.75;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 248;
-    lv2:symbol "delay_blend";
-    lv2:name "delay_blend";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 1;
-    lv2:portProperty lv2:integer
+    lv2:symbol "delay_feedback";
+    lv2:name "delay_feedback";
+    lv2:minimum 0.0;
+    lv2:maximum 0.99;
+    lv2:default 0.75
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 249;
-    lv2:symbol "delay_tune";
-    lv2:name "delay_tune";
-    lv2:minimum 415;
-    lv2:maximum 467;
-    lv2:default 440;
-    lv2:portProperty lv2:integer
+    lv2:symbol "delay_pingpong";
+    lv2:name "delay_pingpong";
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 0.0
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 250;
-    lv2:symbol "reverb_on";
-    lv2:name "reverb_on";
-    lv2:minimum 0;
-    lv2:default 0;
-    lv2:portProperty lv2:toggled
+    lv2:symbol "delay_lowcut";
+    lv2:name "delay_lowcut";
+    lv2:minimum 10.0;
+    lv2:maximum 10000.0;
+    lv2:default 10.0;
+    lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 251;
-    lv2:symbol "reverb_bandwidth";
-    lv2:name "reverb_bandwidth";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.75;
+    lv2:symbol "delay_highcut";
+    lv2:name "delay_highcut";
+    lv2:minimum 100.0;
+    lv2:maximum 15000.0;
+    lv2:default 10000.0;
     lv2:portProperty lv2:integer
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 252;
-    lv2:symbol "reverb_tail";
-    lv2:name "reverb_tail";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.5;
-    lv2:portProperty lv2:integer
+    lv2:symbol "reverb_on";
+    lv2:name "reverb_on";
+    lv2:minimum 0.0;
+    lv2:default 0.0;
+    lv2:portProperty lv2:toggled
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 253;
-    lv2:symbol "reverb_damping";
-    lv2:name "reverb_damping";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.25;
-    lv2:portProperty lv2:integer
+    lv2:symbol "reverb_gain";
+    lv2:name "reverb_gain";
+    lv2:minimum 0.0;
+    lv2:maximum 0.99;
+    lv2:default 0.9
   ]
  , [
     a lv2:ControlPort, lv2:InputPort;
     lv2:index 254;
-    lv2:symbol "reverb_blend";
-    lv2:name "reverb_blend";
-    lv2:minimum 0;
-    lv2:maximum 1;
-    lv2:default 0.25;
+    lv2:symbol "reverb_pitchmod";
+    lv2:name "reverb_pitchmod";
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 0.9;
+    lv2:portProperty lv2:integer
+  ]
+ , [
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 255;
+    lv2:symbol "reverb_tone";
+    lv2:name "reverb_tone";
+    lv2:minimum 0.0;
+    lv2:maximum 10000.0;
+    lv2:default 5000.0;
+    lv2:portProperty lv2:integer
+  ]
+ , [
+    a lv2:ControlPort, lv2:InputPort;
+    lv2:index 256;
+    lv2:symbol "reverb_depth";
+    lv2:name "reverb_depth";
+    lv2:minimum 0.0;
+    lv2:maximum 1.0;
+    lv2:default 0.75;
     lv2:portProperty lv2:integer
   ]
 .

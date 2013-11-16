@@ -9,7 +9,7 @@
   (env1 :attack 0.3 :sustain 0.6 :release 1.2 :curve 0.7)
   (env2 :attack 1 :sustain 1 :release 1.22 :curve 0.7)
   (lfo1 :type lfo_tri :freq 2)
-  (reverb-fx :bandwidth 0.75 :tail 1 :damping 0.25 :blend 0.75)
+  (reverb-fx) ; TODO tune
   (modulations [mod_lfo1 mod_osc1_pitch 0.2]
                [mod_lfo1 mod_flt1_freq 0.2]
                [mod_lfo1 mod_osc2_amp 0.2]
