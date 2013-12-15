@@ -1,4 +1,4 @@
-(ns rogue-presets.utils)
+(ns rogue-presets.utils)  
 
 (defmacro defall
   [& args]
@@ -29,6 +29,8 @@
         supersaw supersquare supersaw2 supersquare2
         noise pink_noise lp_noise bp_noise)
 
+(def sin fm1)
+
 (defn- dcf
   [id & {:as values}]
   (base (str "filter" id) 
@@ -41,6 +43,12 @@
         moog_24db
         svf_lp svf_hp svf_bp svf_notch
         comb)
+
+(def lp_18db lp_24db) ; TODO replace
+
+(def lp_6db  lp_12db) ; TODO replace
+
+(def n_24db svf_notch) ; TODO replace
 
 (defn- lfo
   [id & {:as values}]
@@ -97,6 +105,8 @@
         mod_env4_sp mod_env4_amp
         
         mod_bus_a_pan mod_bus_b_pan)
+
+(def mod_volume 0) ; TODO
 
 (defn modulations
   [& mods]

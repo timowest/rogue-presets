@@ -1,34 +1,35 @@
-(ns rogue-presets.noisemaker)
+(ns rogue-presets.noisemaker
+  (:require [rogue-presets.utils :refer :all]))
 
 (def filter-type
-  {1 :lp24db 2 :lp18db 3 :lp12db 4 :lp6db
-   5 :hp24db 6 :bp24db 7 :n24db})   
+  {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db
+   5 hp_24db 6 bp_24db 7 n_24db})   
 
 (defn osc1-waveform
   [v]
-  (cond (< v 0.5) :saw
-        (< v 1.0) :pulse
-        :else     :noise))
+  (cond (< v 0.5) va_saw
+        (< v 1.0) va_pulse
+        :else     noise))
 
 (defn osc2-waveform
   [v]
-  (cond (< v 0.333) :saw
-        (< v 0.666) :pulse
-        (< v 1.0)   :triangle
-        :else       :sin))
+  (cond (< v 0.333) va_saw
+        (< v 0.666) va_pulse
+        (< v 1.0)   va_tri
+        :else       sin))
 
 (defn lfo-waveform
   [v]
-  ({0 :sin 1 :triangle 2 :saw 3 :rectangle 4 :randomstep 5 :random}
+  ({0 lfo_sin 1 lfo_tri 2 lfo_saw 3 lfo_pulse 4 lfo_sh 5 lfo_noise}
    (long (* v  5.000001)))) 
 
 (def lfo1-destination
-  {1 :nothing 2 :filter 3 :osc1-pitch 4 :osc2-pitch 
-   5 :pw 6 :fm 7 :lfo2-rate})
+  {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
+   5 mod_osc1_pwm 6 mod_osc1_mod 7 mod_lfo2_sp})
 
 (def lfo2-destination
-  {1 :nothing 2 :filter 3 :osc1-pitch 4 :osc2-pitch 
-   5 :pan 6 :volume 7 :lfo1-rate})
+  {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
+   5 mod_bus_a_pan 6 mod_volume 7 mod_lfo1_sp})
 
 (defn transpose
   [v]
