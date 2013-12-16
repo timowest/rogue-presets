@@ -1,9 +1,10 @@
-(ns rogue-presets.noisemaker
+(ns rogue-presets.ext.noisemaker
   (:require [rogue-presets.utils :refer :all]))
 
+; TODO scale
 (def filter-type
-  {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db
-   5 hp_24db 6 bp_24db 7 n_24db})   
+  (comp {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db
+         5 hp_24db 6 bp_24db 7 n_24db} long))  
 
 (defn osc1-waveform
   [v]
@@ -21,15 +22,22 @@
 (defn lfo-waveform
   [v]
   ({0 lfo_sin 1 lfo_tri 2 lfo_saw 3 lfo_pulse 4 lfo_sh 5 lfo_noise}
-   (long (* v  5.000001)))) 
+   (long (* v 5.000001)))) 
 
+; TODO scale
 (def lfo1-destination
-  {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
-   5 mod_osc1_pwm 6 mod_osc1_mod 7 mod_lfo2_sp})
+  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
+         5 mod_osc1_pwm 6 mod_osc1_mod 7 mod_lfo2_sp} long))
 
+; TODO scale
 (def lfo2-destination
-  {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
-   5 mod_bus_a_pan 6 mod_volume 7 mod_lfo1_sp})
+  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
+         5 mod_bus_a_pan 6 mod_volume 7 mod_lfo1_sp} long))
+
+; TODO scale
+(def freead-destination
+  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch
+         5 mod_osc1_pwm 6 mod_osc1_mod} long))
 
 (defn transpose
   [v]
@@ -68,6 +76,14 @@
   [v]
   (* (- v 0.5) 2.0))
   
+(comment 
+  ; modulations
+  mod1   velocity
+  mod2   env2 -> filter1
+  mod3   env3
+  mod4   lfo1
+  mod5   lfo2)
+
 (defn transform
   [m] ; map of keyword to value
   {; programname
@@ -121,12 +137,18 @@
    :env2_sustain (:filtersustain m)
    :env2_release (:filterrelease m)
    
+   :mod2_src     mod_env2
+   :mod2_target  mod_flt1_freq
+   :mod2_amount  1 ; TODO
+   
    ; env3
    :env3_on      (> (:freeadamount m) 0.0)
    :env3_attack  (:freeadattack m)
    :env3_decay   (:freeaddecay m)
-   ; freeadamount TODO
-   ; freeaddestination TODO
+   
+   :mod3_src     mod_env3
+   :mod3_target  (freead-destination (:freeaddestination m)) 
+   :mod3_amount  (:freeadamount m)
    
    ; lfos
    
@@ -134,74 +156,84 @@
    :lfo1_on      (> (:lfo1amount m) 0.0)
    :lfo1_type    (lfo-waveform (:lfo1waveform m))
    :lfo1_freq    (log-scaled-value (:lfo1rate m))
-   ; lfo1amount  
-   ; lfo1destination
    :lfo1_start   (:lfo1phase m)
    ; lfo1sync
    ; lfo1keytrigger
+   
+   :mod4_src      mod_lfo1
+   :mod4_target  (lfo1-destination (:lfo1destination m))
+   :mod4_amount  (:lfo1amount m)
    
    ; lfo2
    :lfo2_on       (> (:lfo2amount m) 0.0)
    :lfo2_type    (lfo-waveform (:lfo2waveform m))
    :lfo2_rate    (log-scaled-rate (:lfo2rate m))
-   ; lfo2amount
-   ; lfo2destination
    :lfo2_start   (:lfo2phase m)
    ; lfo2sync
    ; lfo2keytrigger
-      
-  ; velocity
+   
+   :mod5_src     mod_lfo2
+   :mod5_target  (lfo2-destination (:lfo2destination m))
+   :mod5_amount  (:lfo2amount m) 
+         
+   ; velocity
   
-  ; velocityvolume  
-  ; velocitycontour 
-  ; velocitycutoff 
+   ; velocityvolume  
+   ; velocitycontour 
+   ; velocitycutoff 
   
-  ; various
+   ; various
   
-  ; portamento 
-  ; keyfollow 
-  ; voices 
-  ; portamentomode 
-  ; pitchwheelcutoff 
-  ; pitchwheelpitch 
+   ; portamento 
+   ; keyfollow 
+   ; voices 
+   ; portamentomode 
+   ; pitchwheelcutoff 
+   ; pitchwheelpitch 
   
-  ; highpass] 
-  ; detune] 
-  ; vintagenoise] 
-  ; ringmodulation] 
+   ; highpass] 
+   ; detune] 
+   ; vintagenoise] 
+   ; ringmodulation] 
 
-  ; fx
+   ; fx
   
-  ; chorus1enable] 
-  ; chorus2enable] 
+   :chorus_on (> (+ (:chorus1enable m) 
+                    (:chorus2enable m)) 0.0)
+   ; chorus1enable] 
+   ; chorus2enable] 
 
-  ; reverbwet
-  ; reverbdecay
-  ; reverbpredelay 
-  ; reverbhighcut 
-  ; reverblowcut 
+   :reverb_on (> (:reverbwet m) 0.0)
+   ; reverbwet
+   ; reverbdecay
+   ; reverbpredelay 
+   ; reverbhighcut 
+   ; reverblowcut 
 
-  ; oscbitcrusher 
+   ; oscbitcrusher 
   
-  ; filterdrive 
+   ; filterdrive 
   
-  ; delaywet 
-  ; delaytime 
-  ; delaysync
-  ; delayfactorl  
-  ; delayfactorr 
-  ; delayhighshelf 
-  ; delaylowshelf
-  ; delayfeedback
+   :delay_on (> (:delaywet m) 0.0)
+   ; delaywet 
+   ; delaytime 
+   ; delaysync
+   ; delayfactorl  
+   ; delayfactorr 
+   ; delayhighshelf 
+   ; delaylowshelf
+   ; delayfeedback
   
-  ; envelopeeditordest1  
-  ; envelopeeditorspeed 
-  ; envelopeeditoramount 
-  ; envelopeoneshot 
-  ; envelopefixtempo  
+   ; envelopeeditordest1  
+   ; envelopeeditorspeed 
+   ; envelopeeditoramount 
+   ; envelopeoneshot 
+   ; envelopefixtempo  
 
-  ; tab1open 
-  ; tab2open 
-  ; tab3open 
-  ; tab4open
+   ; tab1open 
+   ; tab2open 
+   ; tab3open 
+   ; tab4open
   })
+
+; TODO function to read noisemaker xml preset into clojure map

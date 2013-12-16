@@ -1,6 +1,6 @@
 (ns rogue-presets.core
   (:require [rogue-presets.serializers :refer :all]
-            [rogue-presets basic fm leads pads]))
+            [rogue-presets basic fm leads noisemaker pads]))
 
 (defn ns-contents
   [ns]
@@ -13,5 +13,6 @@
         (mapcat ns-contents '[rogue-presets.basic
                               rogue-presets.fm
                               rogue-presets.leads
+                              rogue-presets.noisemaker
                               rogue-presets.pads])))
 

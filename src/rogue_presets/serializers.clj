@@ -30,9 +30,16 @@
   lv2:appliesTo base:rogue ;
   rdfs:seeAlso  <presets/" symbol ".ttl> ."))
 
+(defn dbl
+  [v]
+  (cond (= v true)  1.0
+        (= v false) 0.0
+        :else       (double v)))
+    
+
 (defn- port
   [name value]
-  (str "[ lv2:symbol \"" name "\" ; pset:value " (double value) " ]"))
+  (str "[ lv2:symbol \"" name "\" ; pset:value " (dbl value) " ]"))
 
 (defn serialize
   ([preset]
