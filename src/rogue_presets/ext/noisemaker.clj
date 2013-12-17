@@ -1,10 +1,10 @@
 (ns rogue-presets.ext.noisemaker
   (:require [rogue-presets.utils :refer :all]))
 
-; TODO scale
 (def filter-type
   (comp {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db
-         5 hp_24db 6 bp_24db 7 n_24db} long))  
+         5 hp_24db 6 bp_24db 7 n_24db} 
+        long (partial * 7.000001)))  
 
 (defn osc1-waveform
   [v]
@@ -19,30 +19,33 @@
         (< v 1.0)   va_tri
         :else       sin))
 
-(defn lfo-waveform
-  [v]
-  ({0 lfo_sin 1 lfo_tri 2 lfo_saw 3 lfo_pulse 4 lfo_sh 5 lfo_noise}
-   (long (* v 5.000001)))) 
+(def lfo-waveform
+  (comp {0 lfo_sin 1 lfo_tri 2 lfo_saw 3 lfo_pulse 4 lfo_sh 5 lfo_noise}
+        long 
+        (partial * 5.000001))) 
 
-; TODO scale
 (def lfo1-destination
-  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
-         5 mod_osc1_pwm 6 mod_osc1_mod 7 mod_lfo2_sp} long))
+  (comp {0 mod_no_target 1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 
+         4 mod_osc2_pitch 5 mod_osc1_pwm 6 mod_osc1_mod 7 mod_lfo2_sp} 
+        long
+        (partial * 7.000001)))
 
-; TODO scale
 (def lfo2-destination
-  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
-         5 mod_bus_a_pan 6 mod_volume 7 mod_lfo1_sp} long))
+  (comp {0 mod_no_target 1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 
+         4 mod_osc2_pitch 5 mod_bus_a_pan 6 mod_volume 7 mod_lfo1_sp} 
+        long 
+        (partial * 7.000001)))
 
-; TODO scale
 (def freead-destination
-  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch
-         5 mod_osc1_pwm 6 mod_osc1_mod} long))
+  (comp {0 mod_no_target 1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 
+         4 mod_osc2_pitch 5 mod_osc1_pwm 6 mod_osc1_mod} 
+        long 
+        (partial * 6.000001)))
 
-(defn transpose
-  [v]
-  ({0 -12.0 1 0.0 2 12.0 3 24.0}
-   (long (* v 3.0))))
+(def transpose
+  (comp {0 -12.0 1 0.0 2 12.0 3 24.0}
+        long 
+        (partial * 3.0)))
 
 (defn log-scaled-value 
   [v]

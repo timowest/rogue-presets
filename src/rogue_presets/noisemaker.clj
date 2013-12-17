@@ -32,4 +32,11 @@
 (defpreset big-synth "KB Big Synth FN"
   defaults
   (nm/transform big-synth-orig))
+
+(comment
+  (doseq [[k v] big-synth]
+     (when (nil? v)
+       (println k))))
+; lfo2destination -> mod5_target
+; lfo1destination -> mod4_target
   
