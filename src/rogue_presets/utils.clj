@@ -154,11 +154,12 @@
        "lfo1_on" 0.0})))
 
 (defmacro defpreset
-  [name label & contents]
-  (list 'def name
+  [label & contents]
+  (let [name (symbol (.replaceAll (.toLowerCase label) " " "-"))]
+    (list 'def name
         (list 'with-meta 
               (cons 'merge contents)
-               {:name (str name) :label label})))
+               {:name (str name) :label label}))))
 
 (defn basic-osc
   [osc-type]

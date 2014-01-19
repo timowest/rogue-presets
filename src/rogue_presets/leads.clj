@@ -1,7 +1,7 @@
 (ns rogue-presets.leads
   (:require [rogue-presets.utils :refer :all]))
 
-(defpreset lead-pulse1 "Pulse Lead 1"
+(defpreset "Pulse Lead 1"
   two-oscs
   (osc1 :type pulse :width 0.25 :fine -0.05)
   (osc2 :type pulse :width 0.75 :fine 0.05)
@@ -11,7 +11,7 @@
   (modulations [mod_env2 mod_flt1_freq 0.6])
   (reverb-fx))
 
-(defpreset lead-pulse2 "Pulse Lead 2"
+(defpreset "Pulse Lead 2"
   four-oscs-ab
   (osc1 :type pulse :width 0.4 :fine -0.2)
   (osc2 :type pulse :width 0.5 :fine -0.1)
@@ -26,7 +26,7 @@
 
 ; acoustic (TODO move to own ns)
 
-(defpreset brass "Brass"
+(defpreset "Brass"
   defaults
   (osc1 :type saw :level 1 :level_a 0.5)
   (osc2 :type saw :fine 0.01 :level 1 :level_a 1)
@@ -36,7 +36,7 @@
   (modulations [mod_env2 mod_flt1_freq 1]                 
                [mod_env2 mod_flt1_freq 1]))
 
-(defpreset brass2 "Brass 2"
+(defpreset "Brass 2"
   defaults
   (osc1 :type saw :level 1 :level_a 0.5)
   (osc2 :type saw :level 1 :level_a 0.5 :fine 0.1)
@@ -51,7 +51,7 @@
   (chorus-fx)
   (reverb-fx))
 
-(defpreset harpsichord "Harpsichord"
+(defpreset "Harpsichord"
   defaults
   (osc1 :type pulse :width 0.4 :level 1 :level_a 0.6)
   (osc2 :type saw :coarse 12 :level 1 :level_a 0.4)

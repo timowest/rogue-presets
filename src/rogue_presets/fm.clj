@@ -9,7 +9,7 @@
          (osc1 :type fm4 :level 1)
          (bus_a :level 0.5)))
 
-(defpreset fm-bass "Bass FM"
+(defpreset "Bass FM"
   defaults
   (osc1 :type fm1 :level 1 :fine 0.01 :ratio 0.5)
   (osc2 :type fm1 :level 1 :fine -0.01 :level_a 1 :pm 1)

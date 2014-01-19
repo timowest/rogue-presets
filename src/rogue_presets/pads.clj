@@ -1,7 +1,7 @@
 (ns rogue-presets.pads
   (:require [rogue-presets.utils :refer :all]))
 
-(defpreset pad-arctic "Arctic Pad"
+(defpreset "Arctic Pad"
   defaults
   (osc1 :type fm1 :level 1)
   (osc2 :type saw :level 1 :coarse 12 :out_mod 2 :level_a 1) ; RM modulated

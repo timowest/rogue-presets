@@ -3,52 +3,50 @@
 
 (def SR 44100.0)
 
+(defn calc-combobox
+  [items v]
+  ; (int)floorf(value * (numItems - 1.0f) + 1.0f + 0.5f)
+  (long (Math/floor (+ (* v (- items 1.0)) 1.5))))
+
 (def filter-type
-  (comp {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db
-         5 hp_24db 6 bp_24db 7 n_24db} 
-        long 
-        (partial * 7.000001)))  
+  (comp {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db 5 hp_12db
+         6 bp_12db 7 n_24db  
+         8 svf_lp 9 svf_hp 10 svf_bp}
+        (partial calc-combobox 12)))  
 
-(defn osc1-waveform
-  [v]
-  (cond (< v 0.5) va_saw
-        (< v 1.0) va_pulse
-        :else     noise))
+(def osc1-waveform
+  (comp {1 va_saw 2 va_pulse 3 noise}
+        (partial calc-combobox 3)))
 
-(defn osc2-waveform
-  [v]
-  (cond (< v 0.333) va_saw
-        (< v 0.666) va_pulse
-        (< v 1.0)   va_tri
-        :else       sin))
+(def osc2-waveform
+  (comp {1 va_saw 2 va_pulse 3 va_tri 4 sin 5 noise}
+        (partial calc-combobox 5)))
 
 (def lfo-waveform
-  (comp {0 lfo_sin 1 lfo_tri 2 lfo_saw 3 lfo_pulse 4 lfo_sh 5 lfo_noise}
-        long 
-        (partial * 5.000001))) 
+  (comp {1 lfo_sin 2 lfo_tri 3 lfo_saw 4 lfo_pulse 5 lfo_sh 6 lfo_noise}
+        (partial calc-combobox 5))) 
+
+(def mod_osc12_pitch mod_osc1_pitch) ; TODO
 
 (def lfo1-destination
-  (comp {0 mod_no_target 1 mod_flt1_freq 2 mod_osc1_pitch 
-         3 mod_osc2_pitch 4 mod_osc1_pwm 5 mod_osc1_mod 6 mod_lfo2_sp} 
-        long
-        (partial * 7.000001)))
+  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
+         5 mod_osc12_pitch 6 mod_osc1_pwm 7 mod_osc1_mod 8 mod_lfo2_sp}
+        (partial calc-combobox 8)))
 
 (def lfo2-destination
-  (comp {0 mod_no_target 1 mod_flt1_freq 2 mod_osc1_pitch 
-         3 mod_osc2_pitch 4 mod_bus_a_pan 5 mod_volume 6 mod_lfo1_sp} 
-        long 
-        (partial * 7.000001)))
+  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
+         5 mod_osc12_pitch 6 mod_bus_a_pan 7 mod_volume 8 mod_lfo1_sp}
+        (partial calc-combobox 8)))
 
 (def freead-destination
-  (comp {0 mod_no_target 1 mod_flt1_freq 2 mod_osc1_pitch 
-         3 mod_osc2_pitch 4 mod_osc1_pwm 5 mod_osc1_mod} 
-        long 
-        (partial * 6.000001)))
+  (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 
+         4 mod_osc2_pitch 5 mod_osc1_pwm 6 mod_osc1_mod}
+        (partial calc-combobox 6)))
 
 (def transpose
   (comp {0 -12.0 1 0.0 2 12.0 3 24.0}
         long 
-        (partial * 3.0)))
+        (partial * 3.00001)))
 
 (defn log-scaled-value 
   [v]
@@ -182,7 +180,7 @@
    ; lfo1
    :lfo1_on      (> (:lfo1amount m) 0.0)
    :lfo1_type    (lfo-waveform (:lfo1waveform m))
-   :lfo1_freq    (log-scaled-value (:lfo1rate m))
+   :lfo1_freq    (log-scaled-rate (:lfo1rate m))
    :lfo1_start   (:lfo1phase m)
    ; lfo1sync
    ; lfo1keytrigger

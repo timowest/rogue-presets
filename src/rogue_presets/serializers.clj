@@ -39,6 +39,8 @@
 
 (defn- port
   [name value]
+  (when (nil? value)
+    (throw (IllegalArgumentException. (str "nil value for " name))))
   (str "[ lv2:symbol \"" name "\" ; pset:value " (dbl value) " ]"))
 
 (defn serialize
@@ -61,6 +63,7 @@
                                       (map (comp preset :name meta) presets)))]
     (spit (str path "/presets.ttl") presets-txt)
     (doseq [preset presets]
+      (println (:name (meta preset)))
       (spit (str path "/presets/" (:name (meta preset)) ".ttl") 
             (serialize preset)))))
           
