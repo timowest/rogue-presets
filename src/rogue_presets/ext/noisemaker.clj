@@ -169,7 +169,7 @@
    :mod2_amount  (mod-amount (:filtercontour m))
    
    ; env3
-   :env3_on      (> (:freeadamount m) 0.0)
+   :env3_on      (> (:freeaddestination m) 0)
    :env3_attack  (:freeadattack m)
    :env3_decay   (:freeaddecay m)
    
@@ -182,7 +182,7 @@
    ; lfos
    
    ; lfo1
-   :lfo1_on      (not= (:lfo1amount m) 0.5)
+   :lfo1_on      (> (:lfo1destination m) 0)
    :lfo1_type    (lfo-waveform (:lfo1waveform m))
    :lfo1_freq    (log-scaled-rate (:lfo1rate m))
    :lfo1_start   (:lfo1phase m)
@@ -196,7 +196,7 @@
                    0.0)
    
    ; lfo2
-   :lfo2_on       (not= (:lfo2amount m) 0.5)
+   :lfo2_on      (> (:lfo2destination m) 0)
    :lfo2_type    (lfo-waveform (:lfo2waveform m))
    :lfo2_freq    (log-scaled-rate (:lfo2rate m))
    :lfo2_start   (:lfo2phase m)
