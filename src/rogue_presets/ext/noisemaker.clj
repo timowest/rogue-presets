@@ -103,6 +103,8 @@
   mod4   lfo1
   mod5   lfo2)
 
+; TODO check modulations
+
 (defn transform
   [m] ; map of keyword to value
   (into {} (map (fn [[k v]] [(name k) v])
@@ -171,35 +173,41 @@
    :env3_attack  (:freeadattack m)
    :env3_decay   (:freeaddecay m)
    
-   :mod3_src     mod_env3
+   :mod3_src     (if (> (:freeaddestination m) 0) mod_env3 0.0)
    :mod3_target  (freead-destination (:freeaddestination m)) 
-   :mod3_amount  (mod-amount (:freeadamount m))
+   :mod3_amount  (if (> (:freeaddestination m) 0)
+                   (mod-amount (:freeadamount m))
+                   0.0)
    
    ; lfos
    
    ; lfo1
-   :lfo1_on      (> (:lfo1amount m) 0.0)
+   :lfo1_on      (not= (:lfo1amount m) 0.5)
    :lfo1_type    (lfo-waveform (:lfo1waveform m))
    :lfo1_freq    (log-scaled-rate (:lfo1rate m))
    :lfo1_start   (:lfo1phase m)
    ; lfo1sync
    ; lfo1keytrigger
    
-   :mod4_src      mod_lfo1
+   :mod4_src     (if (> (:lfo1destination m) 0) mod_lfo1 0.0)
    :mod4_target  (lfo1-destination (:lfo1destination m))
-   :mod4_amount  (mod-amount (:lfo1amount m))
+   :mod4_amount  (if (> (:lfo1destination m) 0)   
+                   (mod-amount (:lfo1amount m))
+                   0.0)
    
    ; lfo2
-   :lfo2_on       (> (:lfo2amount m) 0.0)
+   :lfo2_on       (not= (:lfo2amount m) 0.5)
    :lfo2_type    (lfo-waveform (:lfo2waveform m))
    :lfo2_freq    (log-scaled-rate (:lfo2rate m))
    :lfo2_start   (:lfo2phase m)
    ; lfo2sync
    ; lfo2keytrigger
    
-   :mod5_src     mod_lfo2
+   :mod5_src     (if (> (:lfo2destination m) 0) mod_lfo2 0.0)
    :mod5_target  (lfo2-destination (:lfo2destination m))
-   :mod5_amount  (mod-amount (:lfo2amount m)) 
+   :mod5_amount  (if (> (:lfo2destination m) 0)
+                   (mod-amount (:lfo2amount m))
+                   0.0)
          
    ; velocity
   
@@ -238,16 +246,16 @@
    ; oscbitcrusher 
   
    ; filterdrive 
-  
+    
    :delay_on (> (:delaywet m) 0.0)
-   ; delaywet 
-   ; delaytime 
+   ; delaywet TODO 
+   ; delaytime  TODO
    ; delaysync
    ; delayfactorl  
    ; delayfactorr 
    ; delayhighshelf 
    ; delaylowshelf
-   ; delayfeedback
+   ; delayfeedback TODO
   
    ; envelopeeditordest1  
    ; envelopeeditorspeed 
