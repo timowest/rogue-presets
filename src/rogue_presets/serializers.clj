@@ -34,7 +34,7 @@
   [v]
   (cond (= v true)  1.0
         (= v false) 0.0
-        :else       (double v)))
+        :else       (format "%.4f" (double v))))
     
 
 (defn- port

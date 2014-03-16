@@ -8,6 +8,18 @@
   ; (int)floorf(value * (numItems - 1.0f) + 1.0f + 0.5f)
   (long (Math/floor (+ (* v (- items 1.0)) 1.5))))
 
+(defn attack
+  [v] ; =MIN((2.1*A1)^6.5, 1.928)  
+  (Math/min (Math/pow (* 2.1 v) 6.5) 1.928))
+
+(defn decay
+  [v] 
+  v) ; TODO
+
+(defn release
+  [v] ; =MIN((2*A1)^6.5), 9.613)  
+  (Math/min (Math/pow (* 2 v) 6.5) 7.613))
+  
 (def filter-type
   (comp {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db 5 hp_12db
          6 bp_12db 7 n_24db  
@@ -117,6 +129,7 @@
    :filter1_type (filter-type (:filtertype m))
    :filter1_freq (filter-cutoff (:cutoff m)) 
    :filter1_q    (:resonance m)
+   :filter1_key_to_f (:keyfollow m)
    
    ; osc
    ; oscmastertune
@@ -148,21 +161,23 @@
    :osc3_on      (> (:osc3volume m) 0.0)
    :osc3_level_a (> (:osc3volume m) 0.0)
    :osc3_level   (osc-volume (:osc3volume m)) 
+   :osc3_type    va_pulse
+   :osc3_coarse  (- (transpose (:transpose m)) 24.0)
    
    ; envs
    
    ; env1
-   :env1_attack  (:ampattack m)
-   :env1_decay   (:ampdecay m)
-   :env1_sustain (sustain (:ampsustain m))
-   :env1_release (:amprelease m)
+   :env1_attack  (attack (:ampattack m))
+   :env1_decay   (decay (:ampdecay m))
+   :env1_sustain (:ampsustain m)
+   :env1_release (release (:amprelease m))
    
    ; env2
    :env2_on      (not= (:filtercontour m) 0.5)
-   :env2_attack  (:filterattack m)
-   :env2_decay   (:filterdecay m)
-   :env2_sustain (sustain (:filtersustain m))
-   :env2_release (:filterrelease m)
+   :env2_attack  (attack (:filterattack m)) 
+   :env2_decay   (decay (:filterdecay m))
+   :env2_sustain (sustain (:filtersustain m)) 
+   :env2_release (release (:filterrelease m))
    
    :mod2_src     mod_env2
    :mod2_target  mod_flt1_freq
@@ -170,8 +185,10 @@
    
    ; env3
    :env3_on      (> (:freeaddestination m) 0)
-   :env3_attack  (:freeadattack m)
-   :env3_decay   (:freeaddecay m)
+   :env3_attack  (attack (:freeadattack m))
+   :env3_decay   (decay (:freeaddecay m))
+   :env3_sustain 0.0 ; TODO
+   :env3_release 1.0 ; TODO
    
    :mod3_src     (if (> (:freeaddestination m) 0) mod_env3 0.0)
    :mod3_target  (freead-destination (:freeaddestination m)) 
@@ -224,22 +241,22 @@
    ; pitchwheelcutoff 
    ; pitchwheelpitch 
   
-   ; highpass] 
-   ; detune] 
-   ; vintagenoise] 
-   ; ringmodulation] 
+   ; highpass
+   ; detune
+   ; vintagenoise 
+   ; ringmodulation 
 
    ; fx
   
-   :chorus_on (> (+ (:chorus1enable m) 
-                    (:chorus2enable m)) 0.0)
-   ; chorus1enable] 
-   ; chorus2enable] 
+   :chorus_on    (> (+ (:chorus1enable m) 
+                       (:chorus2enable m)) 0.0)
+   ; chorus1enable
+   ; chorus2enable 
 
-   :reverb_on (> (:reverbwet m) 0.0)
-   ; reverbwet
+   :reverb_on    (> (:reverbwet m) 0.0)
+   ; reverbwet   TODO
    ; reverbdecay
-   ; reverbpredelay 
+   ; reverbpredelay TODO
    ; reverbhighcut 
    ; reverblowcut 
 
@@ -247,9 +264,9 @@
   
    ; filterdrive 
     
-   :delay_on (> (:delaywet m) 0.0)
-   ; delaywet TODO 
-   ; delaytime  TODO
+   :delay_on     (> (:delaywet m) 0.0)
+   :delay_depth  (:delaywet m)
+   ; delaytime   TODO
    ; delaysync
    ; delayfactorl  
    ; delayfactorr 
@@ -269,4 +286,4 @@
    ; tab4open
   })))
 
-; TODO function to read noisemaker xml preset into clojure map
+ 
