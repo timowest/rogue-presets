@@ -277,11 +277,11 @@
    :delay_depth  (:delaywet m)
    ;:delay_bpm    (delaytime-to-bpm (:delaytime m)) FIXME
    ; delaysync
-   :delay_divider_l (- 1.0 (:delayfactorl m)) 
-   :delay_divider_r (- 1.0 (:delayfactorr m))
+   :delay_divider_l (if (> (:delayfactorl m) 0) 0.5 1.0) 
+   :delay_divider_r (if (> (:delayfactorr m) 0) 0.5 1.0) 
    ; delayhighshelf TODO
    ; delaylowshelf TODO
-   :delay_feedback (Math/max (:delayfeedback m) 0.99)
+   :delay_feedback (Math/min (:delayfeedback m) 0.99)
   
    ; envelopeeditordest1  
    ; envelopeeditorspeed 
