@@ -10,15 +10,19 @@
 
 (defn attack
   [v] ; =MIN((2.1*A1)^6.5, 1.928)  
-  (Math/min (Math/pow (* 2.1 v) 6.5) 1.928))
+  (Math/max 
+    (Math/min (Math/pow (* 2.1 v) 6.5) 1.928)
+    0.01))
 
 (defn decay
   [v] 
-  v) ; TODO
+  (Math/max v 0.01)) ; TODO
 
 (defn release
-  [v] ; =MIN((2*A1)^6.5), 9.613)  
-  (Math/min (Math/pow (* 2 v) 6.5) 7.613))
+  [v] ; =MIN((2*A1)^6.5), 9.613)
+  (Math/max  
+    (Math/min (Math/pow (* 2 v) 6.5) 7.613)
+    0.01))
   
 (def filter-type
   (comp {1 lp_24db 2 lp_18db 3 lp_12db 4 lp_6db 5 hp_12db
@@ -106,6 +110,11 @@
   (log-scaled-volume v 1.0))
 
 (def mod-amount log-scaled-value-centered)
+
+(defn delaytime-to-bpm
+  [v] 
+  (let [scaled (+ 0.01 (* 0.99 (log-scaled-value v)))]
+    (/ 60.0 (* 4.0 scaled))))
   
 (comment 
   ; modulations
@@ -266,13 +275,13 @@
     
    :delay_on     (> (:delaywet m) 0.0)
    :delay_depth  (:delaywet m)
-   ; delaytime   TODO
+   ;:delay_bpm    (delaytime-to-bpm (:delaytime m)) FIXME
    ; delaysync
-   ; delayfactorl  
-   ; delayfactorr 
-   ; delayhighshelf 
-   ; delaylowshelf
-   ; delayfeedback TODO
+   :delay_divider_l (- 1.0 (:delayfactorl m)) 
+   :delay_divider_r (- 1.0 (:delayfactorr m))
+   ; delayhighshelf TODO
+   ; delaylowshelf TODO
+   :delay_feedback (Math/max (:delayfeedback m) 0.99)
   
    ; envelopeeditordest1  
    ; envelopeeditorspeed 

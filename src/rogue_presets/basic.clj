@@ -1,6 +1,8 @@
 (ns rogue-presets.basic
   (:require [rogue-presets.utils :refer :all]))
 
+(comment
+
 (defpreset "Basic Saw"
   (basic-osc saw))
 
@@ -18,7 +20,7 @@
   (basic-osc pd_square))
 
 (defpreset "PD Pulse"
-  (basic-osc pd_pulse))
+  (basic-osc pd_pulse)))
 
 ; double
 
