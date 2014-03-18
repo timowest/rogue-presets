@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="183" version="1.6">
+  <programs>
+    <program programname="LD High Noon AS" volume="0.41200003" filtertype="0.272727281"
+             cutoff="0" resonance="0.140000001" osc1volume="0.263999999" osc2volume="0.732000053"
+             osc3volume="0.248000011" osc1waveform="0" osc2waveform="0.5"
+             oscsync="1" oscmastertune="0.5" osc1tune="0.31400001" osc2tune="0.164000005"
+             osc1finetune="0.512000024" osc2finetune="0.0400000028" portamento="0.352000028"
+             keyfollow="0" filtercontour="0.56400001" filterattack="0" filterdecay="0.600000024"
+             filtersustain="0.0320000015" filterrelease="0.508000016" ampattack="0"
+             ampdecay="0" ampsustain="1" amprelease="0.476000011" voices="0"
+             portamentomode="0.5" lfo1waveform="0.668000042" lfo2waveform="0.26000002"
+             lfo1rate="0.520000041" lfo2rate="0.440000027" lfo1amount="0.668000042"
+             lfo2amount="0.224000007" lfo1destination="0.285714298" lfo2destination="0.571428597"
+             lfo1phase="0" lfo2phase="0" osc1pw="0.5" osc2fm="0" osc1phase="0.5"
+             osc2phase="0" transpose="1" freeadattack="0" freeaddecay="0.536000013"
+             freeadamount="0.732000053" freeaddestination="0.600000024" lfo1sync="0"
+             lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="0" velocityvolume="0"
+             velocitycontour="1" velocitycutoff="0" pitchwheelcutoff="0" pitchwheelpitch="0.172000006"
+             highpass="0.26000002" detune="0.328000009" vintagenoise="0.116000004"
+             ringmodulation="0" chorus1enable="1" chorus2enable="1" reverbwet="0"
+             reverbdecay="0.448000014" reverbpredelay="0.232000008" reverbhighcut="0"
+             reverblowcut="1" oscbitcrusher="0.324000001" filterdrive="0"
+             delaywet="0" delaytime="0.5" delaysync="0" delayfactorl="0" delayfactorr="0"
+             delayhighshelf="0" delaylowshelf="0" delayfeedback="0.5" envelopeeditordest1="0"
+             envelopeeditorspeed="1" envelopeeditoramount="1" envelopeoneshot="0"
+             envelopefixtempo="0" tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

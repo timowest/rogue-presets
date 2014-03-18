@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="215" version="1.6">
+  <programs>
+    <program programname="LD Soft Bell Lead TAL" volume="0.532000005" filtertype="0.0909090936"
+             cutoff="0.527999997" resonance="0.324000001" osc1volume="0.516000032"
+             osc2volume="0.556000054" osc3volume="0.192000002" osc1waveform="0.5"
+             osc2waveform="0.5" oscsync="0" oscmastertune="0.5" osc1tune="0.380000025"
+             osc2tune="0.764000058" osc1finetune="0.672000051" osc2finetune="0.624000013"
+             portamento="0" keyfollow="1" filtercontour="0.0600000024" filterattack="0.648000002"
+             filterdecay="0.560000002" filtersustain="0.460000008" filterrelease="0.664000034"
+             ampattack="0" ampdecay="0.580000043" ampsustain="0.26000002"
+             amprelease="0.720000029" voices="0" portamentomode="0" lfo1waveform="0"
+             lfo2waveform="0" lfo1rate="0.516000032" lfo2rate="0" lfo1amount="0.56400001"
+             lfo2amount="0" lfo1destination="0.285714298" lfo2destination="0"
+             lfo1phase="0" lfo2phase="0" osc1pw="0" osc2fm="0" osc1phase="0"
+             osc2phase="0" transpose="0.91200006" freeadattack="0.664000034"
+             freeaddecay="0.680000007" freeadamount="1" freeaddestination="0.200000003"
+             lfo1sync="0" lfo1keytrigger="1" lfo2sync="0" lfo2keytrigger="0"
+             velocityvolume="0" velocitycontour="0" velocitycutoff="0" pitchwheelcutoff="0"
+             pitchwheelpitch="0.168000013" highpass="0.276000023" detune="0.340000004"
+             vintagenoise="0" ringmodulation="0" chorus1enable="0" chorus2enable="0"
+             reverbwet="0.432000011" reverbdecay="0.812000036" reverbpredelay="0.124000005"
+             reverbhighcut="0" reverblowcut="0.708000004" oscbitcrusher="1"
+             filterdrive="0" delaywet="0" delaytime="0.5" delaysync="0" delayfactorl="0"
+             delayfactorr="0" delayhighshelf="0" delaylowshelf="0" delayfeedback="0.5"
+             envelopeeditordest1="0" envelopeeditorspeed="0" envelopeeditoramount="0"
+             envelopeoneshot="0" envelopefixtempo="0" tab1open="1" tab2open="0"
+             tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

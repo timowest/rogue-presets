@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="221" version="1.6">
+  <programs>
+    <program programname="LD Take Up Strings TAL" volume="0.700000048" filtertype="0.181818187"
+             cutoff="0.900000036" resonance="0" osc1volume="0.560000002" osc2volume="0.536000013"
+             osc3volume="0" osc1waveform="0.5" osc2waveform="0" oscsync="0"
+             oscmastertune="0.5" osc1tune="0.230000004" osc2tune="0.516000032"
+             osc1finetune="0.468000025" osc2finetune="0.568000019" portamento="0.596000016"
+             keyfollow="1" filtercontour="0.5" filterattack="0" filterdecay="0.580000043"
+             filtersustain="0.404000014" filterrelease="0.960000038" ampattack="0"
+             ampdecay="0.664000034" ampsustain="1" amprelease="0.104000002"
+             voices="0.600000024" portamentomode="0" lfo1waveform="0.232000008"
+             lfo2waveform="0.220000014" lfo1rate="0.064000003" lfo2rate="0.560000002"
+             lfo1amount="0.792000055" lfo2amount="0.588" lfo1destination="0.571428597"
+             lfo2destination="0.428571433" lfo1phase="0" lfo2phase="0" osc1pw="0"
+             osc2fm="0" osc1phase="0" osc2phase="0" transpose="1" freeadattack="0.436000019"
+             freeaddecay="0.300000012" freeadamount="0.616000056" freeaddestination="0"
+             lfo1sync="0" lfo1keytrigger="1" lfo2sync="0" lfo2keytrigger="0"
+             velocityvolume="0" velocitycontour="0" velocitycutoff="0" pitchwheelcutoff="0"
+             pitchwheelpitch="0.167000011" highpass="0.0960000008" detune="0.968000054"
+             vintagenoise="0.292000026" ringmodulation="0" chorus1enable="1"
+             chorus2enable="0" reverbwet="0" reverbdecay="0.620000005" reverbpredelay="0"
+             reverbhighcut="0" reverblowcut="1" oscbitcrusher="1" filterdrive="0"
+             delaywet="0.516000032" delaytime="0.800000012" delaysync="1"
+             delayfactorl="1" delayfactorr="0" delayhighshelf="0" delaylowshelf="0"
+             delayfeedback="0.120000005" envelopeeditordest1="1" envelopeeditorspeed="0.400000006"
+             envelopeeditoramount="0.452000022" envelopeoneshot="1" envelopefixtempo="0"
+             tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0"
+                     controlPointLeftX="0" controlPointLeftY="0" controlPointRightX="0.100000001"
+                     controlPointRightY="0"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.985000014"
+                     controlPointLeftX="0.918518543" controlPointLeftY="0.235000014"
+                     controlPointRightX="1" controlPointRightY="0.985000014"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

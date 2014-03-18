@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="228" version="1.6">
+  <programs>
+    <program programname="LD We Felt Digital TUC" volume="0.404000014" filtertype="0.0909090936"
+             cutoff="0" resonance="0.252000004" osc1volume="0.580000043" osc2volume="0.596000016"
+             osc3volume="0" osc1waveform="0.5" osc2waveform="0.25" oscsync="0"
+             oscmastertune="0.5" osc1tune="0.49000001" osc2tune="0.516000032"
+             osc1finetune="0.464000016" osc2finetune="0.556000054" portamento="0.076000005"
+             keyfollow="0" filtercontour="0.820000052" filterattack="0" filterdecay="0.448000014"
+             filtersustain="0.640000045" filterrelease="0.576000035" ampattack="0"
+             ampdecay="0.268000007" ampsustain="0.632000029" amprelease="0.5"
+             voices="1" portamentomode="0.5" lfo1waveform="0.208000004" lfo2waveform="0"
+             lfo1rate="0.220000014" lfo2rate="0.464000016" lfo1amount="0.908000052"
+             lfo2amount="0.576000035" lfo1destination="0.571428597" lfo2destination="0.285714298"
+             lfo1phase="0" lfo2phase="0" osc1pw="0.5" osc2fm="0.356000006"
+             osc1phase="0.5" osc2phase="0" transpose="0.504000008" freeadattack="0"
+             freeaddecay="0" freeadamount="0" freeaddestination="0" lfo1sync="0"
+             lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="0" velocityvolume="0.364000022"
+             velocitycontour="0.792000055" velocitycutoff="0.15200001" pitchwheelcutoff="0"
+             pitchwheelpitch="0" highpass="0.168000013" detune="0.19600001"
+             vintagenoise="0" ringmodulation="0" chorus1enable="1" chorus2enable="0"
+             reverbwet="0.504000008" reverbdecay="0.656000018" reverbpredelay="0.360000014"
+             reverbhighcut="0.356000006" reverblowcut="0.732000053" oscbitcrusher="1"
+             filterdrive="0" delaywet="0.220000014" delaytime="0.816000044"
+             delaysync="1" delayfactorl="1" delayfactorr="0" delayhighshelf="0"
+             delaylowshelf="0" delayfeedback="0.136000007" envelopeeditordest1="0"
+             envelopeeditorspeed="0" envelopeeditoramount="0" envelopeoneshot="0"
+             envelopefixtempo="0" tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

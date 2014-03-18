@@ -12,61 +12,173 @@
          (into {})
          nm/transform)))
 
-(defpreset "KB Big Synth FN"
-  defaults
-  (parse-nm "dev-resources/KB Big Synth FN.nm"))
+(defmacro defpreset-nm
+  [name]
+  `(defpreset ~name
+     defaults
+     (parse-nm ~(str "dev-resources/nm/" name ".nm"))))        
 
-(defpreset "KB Chimp Organ TUC"
-  defaults
-  (parse-nm "dev-resources/KB Chimp Organ TUC.nm"))
+; ARP = Arpeggiated
+; BS = Bass
+; CH = Chords
+; DR = Drums
+; FX = Special Effects
+; KB = Keyboards
+; LD = Leads
+; PD = Pads
 
-(defpreset "KB Drops TAL"
-  defaults
-  (parse-nm "dev-resources/KB Drops TAL.nm"))
+; bass
 
-(defpreset "KB E-Piano TAL"
-  defaults
-  (parse-nm "dev-resources/KB E-Piano TAL.nm"))
+;(defpreset-nm "BS 007 FN")
+(defpreset-nm "BS 7th Gates FN")
+(defpreset-nm "BS Bass Deep TAL")
+(defpreset-nm "BS Bass is your friend F")
+(defpreset-nm "BS Bassolead FN")
+(defpreset-nm "BS Basspa FN")
+;(defpreset-nm "BS Big Starter TAL")
+(defpreset-nm "BS C64 Octavebass FN")
+(defpreset-nm "BS Clean Flat Bass TAL")
+(defpreset-nm "BS Dark Bass TAL")
+(defpreset-nm "BS Dark Night FN")
+;(defpreset-nm "BS D&B Wubler TAL")
+(defpreset-nm "BS Deep Driver TAL")
+(defpreset-nm "BS Detuned FN")
+;(defpreset-nm "BS Double Whoppy TUC")
+(defpreset-nm "BS Eager Beaver AS")
+(defpreset-nm "BS Easy Listener FN")
+(defpreset-nm "BS Energyator FN")
+(defpreset-nm "BS Fat Side FN")
+(defpreset-nm "BS Flaming Bass FN")
+;(defpreset-nm "BS FM Pulse Train TAL")
+(defpreset-nm "BS Goodspeed FN")
+(defpreset-nm "BS Hard 80s TAL")
+(defpreset-nm "BS Jelly Mountain AS")
+(defpreset-nm "BS Joop Joop 1 AS")
+(defpreset-nm "BS Juicy Bass TUC")
+;(defpreset-nm "BS Justice TAL")
+(defpreset-nm "BS Knarziger FN")
+(defpreset-nm "BS LFO Roller FN")
+(defpreset-nm "BS Madskillz FN")
+(defpreset-nm "BS Mixmiddle FN")
+(defpreset-nm "BS Mong AS")
+(defpreset-nm "BS Neon Bass AS")
+(defpreset-nm "BS Night And Day FN")
+(defpreset-nm "BS Noizigian FN")
+(defpreset-nm "BS Open Bass FN")
+(defpreset-nm "BS Pluggiator FN")
+(defpreset-nm "BS Reso Bass Classic TAL")
+(defpreset-nm "BS SAWbreaker FN")
+(defpreset-nm "BS Sawlight FN")
+(defpreset-nm "BS Sci Fi TAL")
+(defpreset-nm "BS Slow Filter FN")
+(defpreset-nm "BS Small Bassist FN")
+(defpreset-nm "BS Syncetel Bass FN")
+;(defpreset-nm "BS Terminator TAL")
+;(defpreset-nm "BS The Island FN")
+(defpreset-nm "BS Tock Sick AS")
+;(defpreset-nm "BS Tremolo Bass TAL")
+(defpreset-nm "BS Tripple Wobbler TAL")
+(defpreset-nm "BS Whoppy The Fifth TUC")
+(defpreset-nm "BS Wobbler FN")
+(defpreset-nm "BS Wobbler II FN")
+;(defpreset-nm "BS Wonderland FN")
 
-(defpreset "KB Ghostly Glomp AS"
-  defaults
-  (parse-nm "dev-resources/KB Ghostly Glomp AS.nm"))
+; keyboard
 
-(defpreset "KB Glass Star TUC"
-  defaults
-  (parse-nm "dev-resources/KB Glass Star TUC.nm"))
+(defpreset-nm "KB Big Synth FN")
+(defpreset-nm "KB Chimp Organ TUC")
+;(defpreset-nm "KB Drops TAL")
+;(defpreset-nm "KB E-Piano TAL")
+(defpreset-nm "KB Ghostly Glomp AS")
+;(defpreset-nm "KB Glass Star TUC")
+(defpreset-nm "KB Glockenschlag FN")
+(defpreset-nm "KB Piano House TAL")
+(defpreset-nm "KB Pop Pluck TUC")
+;(defpreset-nm "KB Sawberry Milkshake TU")
+(defpreset-nm "KB Screetcher TUC")
+(defpreset-nm "KB Smooth Sine TAL")
+(defpreset-nm "KB White Noise FN")
 
-(defpreset "KB Glockenschlag FN"
-  defaults
-  (parse-nm "dev-resources/KB Glockenschlag FN.nm"))
+; lead
 
-(defpreset "KB Piano House TAL"
-  defaults
-  (parse-nm "dev-resources/KB Piano House TAL.nm"))
-
-(defpreset "KB Pop Pluck TUC"
-  defaults
-  (parse-nm "dev-resources/KB Pop Pluck TUC.nm"))
-
-(defpreset "KB Sawberry Milkshake TU"
-  defaults
-  (parse-nm "dev-resources/KB Sawberry Milkshake TU.nm"))
-
-(defpreset "KB Screetcher TUC"
-  defaults
-  (parse-nm "dev-resources/KB Screetcher TUC.nm"))
-
-(defpreset "KB Screetcher TUC"
-  defaults
-  (parse-nm "dev-resources/KB Screetcher TUC.nm"))
-
-(defpreset "KB Smooth Sine TAL"
-  defaults
-  (parse-nm "dev-resources/KB Smooth Sine TAL.nm"))
-
-(defpreset "KB White Noise FN"
-  defaults
-  (parse-nm "dev-resources/KB White Noise FN.nm"))
+(defpreset-nm "LD 3D Game Boy TAL")
+(defpreset-nm "LD 8bitter II FN")
+(defpreset-nm "LD Acid Dist Noisy TAL")
+(defpreset-nm "LD Acid Saw TAL")
+(defpreset-nm "LD Aggggro TAL")
+;(defpreset-nm "LD Alarm Light TUC")
+;(defpreset-nm "LD Analog Down Glider TA")
+(defpreset-nm "LD Basic Whapp TUC")
+;(defpreset-nm "LD Big Dipper AS")
+(defpreset-nm "LD Bon Voyage FN")
+(defpreset-nm "LD Breadbin Burble AS")
+;(defpreset-nm "LD Crazy Triangle ARP TA")
+(defpreset-nm "LD Crazy Trumped AS")
+;(defpreset-nm "LD Croke AS")
+(defpreset-nm "LD Crystal Lead TAL")
+;(defpreset-nm "LD Delay Filter Step TAL")
+(defpreset-nm "LD Dirty Snow AS")
+(defpreset-nm "LD D Robot TAL")
+(defpreset-nm "LD Drop In Pulse TAL")
+(defpreset-nm "LD Electric Charged TAL")
+;(defpreset-nm "LD Everglade Walk TAL")
+(defpreset-nm "LD FM Pulse Train TAL")
+(defpreset-nm "LD FM Sync Voice AS")
+;(defpreset-nm "LD Fug Pugly AS")
+(defpreset-nm "LD Funky Mod TAL")
+(defpreset-nm "LD Fuzzy Box TAL")
+;(defpreset-nm "LD Fuzzy Cargo TAL")
+(defpreset-nm "LD Geiler Patch FN")
+(defpreset-nm "LD Green Glass Worm TUC")
+(defpreset-nm "LD Happy go Mucky AS")
+(defpreset-nm "LD Haunted Strings AS")
+(defpreset-nm "LD High Noon AS")
+;(defpreset-nm "LD High Voltage Lift TAL")
+;(defpreset-nm "LD Its Complicated AS")
+;(defpreset-nm "LD Lo Fi Party TAL")
+(defpreset-nm "LD Luxury Lead AS")
+;(defpreset-nm "LD Marging Fifth AS")
+(defpreset-nm "LD Mellow Chord TAL")
+(defpreset-nm "LD Mellow Organ TAL")
+(defpreset-nm "LD Metal Lead TAL")
+(defpreset-nm "LD Metal Spikes AS")
+(defpreset-nm "LD Metal Wahuuu TAL")
+;(defpreset-nm "LD Mod-U-Crush AS")
+;(defpreset-nm "LD ModWave AS")
+(defpreset-nm "LD Morph Sync TAL")
+;(defpreset-nm "LD Muchos Air TAL")
+(defpreset-nm "LD Neon Knife TUC")
+(defpreset-nm "LD Noisy Sync Lead TAL")
+(defpreset-nm "LD Ohm Duck Solo TAL")
+;(defpreset-nm "LD Phasing Saws TAL")
+(defpreset-nm "LD Plastic Attack TAL")
+(defpreset-nm "LD Pleutonium FN")
+(defpreset-nm "LD Plucked String TAL")
+(defpreset-nm "LD Power Lead TAL")
+(defpreset-nm "LD Pwap AS")
+;(defpreset-nm "LD Rasp Lead AS")
+(defpreset-nm "LD Resobells FN")
+(defpreset-nm "LD Resolve 2 AS")
+(defpreset-nm "LD Ringing Lead TAL")
+(defpreset-nm "LD Sci Fi Organ TAL")
+;(defpreset-nm "LD Shiver Stab AS")
+;(defpreset-nm "LD Shutter Lead TAL")
+(defpreset-nm "LD Slop AS")
+(defpreset-nm "LD Soft Bell Lead TAL")
+(defpreset-nm "LD Special Starter TAL")
+(defpreset-nm "LD Spook AS")
+(defpreset-nm "LD Spring Bell TAL")
+;(defpreset-nm "LD Steam Pulse AS")
+(defpreset-nm "LD SYNCElead FN")
+(defpreset-nm "LD Take Up Strings TAL")
+(defpreset-nm "LD Technoshocker FN")
+;(defpreset-nm "LD The Colour Purple AS")
+;(defpreset-nm "LD The Joy of Stalking A")
+(defpreset-nm "LD Thin Lead TAL")
+(defpreset-nm "LD Tranceline FN")
+(defpreset-nm "LD Triangle Madness TAL")
+(defpreset-nm "LD We Felt Digital TUC")
+(defpreset-nm "LD Woholead FN")
 
 
 (comment

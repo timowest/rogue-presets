@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="172" version="1.6">
+  <programs>
+    <program programname="LD Everglade Walk TAL" volume="0.212000012" filtertype="0.272727281"
+             cutoff="0.382000029" resonance="0.748031497" osc1volume="0.576000035"
+             osc2volume="0.600000024" osc3volume="0.320000023" osc1waveform="0.5"
+             osc2waveform="0.25" oscsync="0" oscmastertune="0.5" osc1tune="0.25"
+             osc2tune="0.5" osc1finetune="0.5" osc2finetune="0.548000038"
+             portamento="0.548000038" keyfollow="0" filtercontour="0.820000052"
+             filterattack="0.408000022" filterdecay="0.552000046" filtersustain="0"
+             filterrelease="0.34800002" ampattack="0" ampdecay="0.448000014"
+             ampsustain="0.420000017" amprelease="0.620000005" voices="0.400000006"
+             portamentomode="0" lfo1waveform="0" lfo2waveform="0" lfo1rate="0.284000009"
+             lfo2rate="0.380000025" lfo1amount="1" lfo2amount="0.584000051"
+             lfo1destination="0.571428597" lfo2destination="0.428571433" lfo1phase="0"
+             lfo2phase="0" osc1pw="0" osc2fm="0" osc1phase="0.5" osc2phase="0"
+             transpose="1" freeadattack="0" freeaddecay="0" freeadamount="0"
+             freeaddestination="0" lfo1sync="0" lfo1keytrigger="1" lfo2sync="0"
+             lfo2keytrigger="0" velocityvolume="0" velocitycontour="0" velocitycutoff="0.560000002"
+             pitchwheelcutoff="0" pitchwheelpitch="0.168000013" highpass="0.124000005"
+             detune="0.376000017" vintagenoise="0.0480000004" ringmodulation="0"
+             chorus1enable="1" chorus2enable="0" reverbwet="0" reverbdecay="0.5"
+             reverbpredelay="0" reverbhighcut="0" reverblowcut="1" oscbitcrusher="1"
+             filterdrive="0.188000008" delaywet="0.284000009" delaytime="0.0320000015"
+             delaysync="0" delayfactorl="0" delayfactorr="1" delayhighshelf="0.552000046"
+             delaylowshelf="0.172000006" delayfeedback="0.656000018" envelopeeditordest1="0.428571433"
+             envelopeeditorspeed="0.400000006" envelopeeditoramount="0.076000005"
+             envelopeoneshot="1" envelopefixtempo="0" tab1open="1" tab2open="0"
+             tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0"
+                     controlPointLeftX="0" controlPointLeftY="0" controlPointRightX="0.100000001"
+                     controlPointRightY="0"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.507407427" centerPointY="0.985000014"
+                     controlPointLeftX="0.272222221" controlPointLeftY="1" controlPointRightX="0.507407427"
+                     controlPointRightY="0"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.696296275" centerPointY="0"
+                     controlPointLeftX="0.596296251" controlPointLeftY="0" controlPointRightX="0.796296299"
+                     controlPointRightY="0"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.825925946" centerPointY="0.980000019"
+                     controlPointLeftX="0.725925922" controlPointLeftY="0.980000019"
+                     controlPointRightX="0.92592597" controlPointRightY="0.980000019"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0" controlPointRightX="1"
+                     controlPointRightY="0"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

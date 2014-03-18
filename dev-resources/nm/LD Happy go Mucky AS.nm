@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="181" version="1.6">
+  <programs>
+    <program programname="LD Happy go Mucky AS" volume="0.332000017" filtertype="0.272727281"
+             cutoff="0.320000023" resonance="0.224000007" osc1volume="0.340000004"
+             osc2volume="0.772000015" osc3volume="0" osc1waveform="0.5" osc2waveform="0"
+             oscsync="0" oscmastertune="0.5" osc1tune="0.850000024" osc2tune="0.5"
+             osc1finetune="0.468000025" osc2finetune="0.5" portamento="0"
+             keyfollow="0" filtercontour="0.512000024" filterattack="0.372000009"
+             filterdecay="0.464000016" filtersustain="0.344000012" filterrelease="0.352000028"
+             ampattack="0.0520000011" ampdecay="0.380000025" ampsustain="0.712000012"
+             amprelease="0.440000027" voices="1" portamentomode="0.5" lfo1waveform="0.0120000001"
+             lfo2waveform="0" lfo1rate="0.128000006" lfo2rate="0.388000011"
+             lfo1amount="0.552000046" lfo2amount="0.192000002" lfo1destination="0.285714298"
+             lfo2destination="0.571428597" lfo1phase="0" lfo2phase="0" osc1pw="0.472000033"
+             osc2fm="0" osc1phase="0.5" osc2phase="0.532000005" transpose="0.5"
+             freeadattack="0" freeaddecay="0.436000019" freeadamount="0.908000052"
+             freeaddestination="0.800000012" lfo1sync="0" lfo1keytrigger="0"
+             lfo2sync="0" lfo2keytrigger="0" velocityvolume="0" velocitycontour="0.812000036"
+             velocitycutoff="0" pitchwheelcutoff="0.120000005" pitchwheelpitch="0.172000006"
+             highpass="0.400000006" detune="1" vintagenoise="0.516000032"
+             ringmodulation="0" chorus1enable="0" chorus2enable="0" reverbwet="0"
+             reverbdecay="0.448000014" reverbpredelay="0.232000008" reverbhighcut="0"
+             reverblowcut="1" oscbitcrusher="0.336000025" filterdrive="0"
+             delaywet="1" delaytime="0.0320000015" delaysync="0" delayfactorl="1"
+             delayfactorr="0" delayhighshelf="0" delaylowshelf="0" delayfeedback="0"
+             envelopeeditordest1="0" envelopeeditorspeed="0" envelopeeditoramount="0"
+             envelopeoneshot="0" envelopefixtempo="0" tab1open="1" tab2open="0"
+             tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

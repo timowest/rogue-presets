@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="202" version="1.6">
+  <programs>
+    <program programname="LD Plastic Attack TAL" volume="0.368000031" filtertype="0.181818187"
+             cutoff="0.368000031" resonance="0.600000024" osc1volume="0" osc2volume="0.636000037"
+             osc3volume="0" osc1waveform="0.5" osc2waveform="0.5" oscsync="1"
+             oscmastertune="0.5" osc1tune="0.638000011" osc2tune="0.776000023"
+             osc1finetune="0.508000016" osc2finetune="0.280000001" portamento="0.572000027"
+             keyfollow="1" filtercontour="1" filterattack="0.5" filterdecay="0.560000002"
+             filtersustain="0.516000032" filterrelease="0" ampattack="0.136000007"
+             ampdecay="0" ampsustain="1" amprelease="0" voices="0" portamentomode="0"
+             lfo1waveform="0" lfo2waveform="0" lfo1rate="0" lfo2rate="0.140000001"
+             lfo1amount="0" lfo2amount="0.656000018" lfo1destination="0" lfo2destination="0"
+             lfo1phase="0" lfo2phase="0" osc1pw="0.5" osc2fm="0" osc1phase="0.5"
+             osc2phase="0" transpose="0.54400003" freeadattack="0.292000026"
+             freeaddecay="0.356000006" freeadamount="0.664000034" freeaddestination="0.600000024"
+             lfo1sync="0" lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="0"
+             velocityvolume="0" velocitycontour="0" velocitycutoff="0" pitchwheelcutoff="0.212000012"
+             pitchwheelpitch="0" highpass="0" detune="0" vintagenoise="0"
+             ringmodulation="0" chorus1enable="0" chorus2enable="0" reverbwet="0"
+             reverbdecay="0" reverbpredelay="0" reverbhighcut="0" reverblowcut="1"
+             oscbitcrusher="1" filterdrive="0" delaywet="1" delaytime="0.0120000001"
+             delaysync="0" delayfactorl="0" delayfactorr="1" delayhighshelf="0"
+             delaylowshelf="0" delayfeedback="0" envelopeeditordest1="0" envelopeeditorspeed="0"
+             envelopeeditoramount="0" envelopeoneshot="0" envelopefixtempo="0"
+             tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

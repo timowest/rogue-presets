@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="210" version="1.6">
+  <programs>
+    <program programname="LD Ringing Lead TAL" volume="0.24000001" filtertype="0.272727281"
+             cutoff="0.212000012" resonance="0.644000053" osc1volume="0.800000012"
+             osc2volume="0.784000039" osc3volume="0" osc1waveform="0.5" osc2waveform="0.5"
+             oscsync="1" oscmastertune="0.5" osc1tune="0.25" osc2tune="0.5"
+             osc1finetune="0.448000014" osc2finetune="0.604000032" portamento="0.65200001"
+             keyfollow="0" filtercontour="0.844000041" filterattack="0.588"
+             filterdecay="0.516000032" filtersustain="0.76000005" filterrelease="0"
+             ampattack="0" ampdecay="0" ampsustain="1" amprelease="0" voices="0"
+             portamentomode="0.5" lfo1waveform="0.648000002" lfo2waveform="0.236000016"
+             lfo1rate="0.744000018" lfo2rate="0.344000012" lfo1amount="0.816000044"
+             lfo2amount="0.712000012" lfo1destination="0.285714298" lfo2destination="0"
+             lfo1phase="0" lfo2phase="0" osc1pw="0.736000061" osc2fm="0" osc1phase="0"
+             osc2phase="0" transpose="1" freeadattack="0.644000053" freeaddecay="0.620000005"
+             freeadamount="0.484000027" freeaddestination="0" lfo1sync="1"
+             lfo1keytrigger="1" lfo2sync="0" lfo2keytrigger="0" velocityvolume="0"
+             velocitycontour="0.632000029" velocitycutoff="0" pitchwheelcutoff="0"
+             pitchwheelpitch="1" highpass="0" detune="0" vintagenoise="0"
+             ringmodulation="1" chorus1enable="0" chorus2enable="0" reverbwet="0"
+             reverbdecay="0.5" reverbpredelay="0" reverbhighcut="0" reverblowcut="1"
+             oscbitcrusher="1" filterdrive="0" delaywet="0.140000001" delaytime="0.076000005"
+             delaysync="1" delayfactorl="1" delayfactorr="0" delayhighshelf="0"
+             delaylowshelf="0" delayfeedback="0" envelopeeditordest1="0" envelopeeditorspeed="1"
+             envelopeeditoramount="0" envelopeoneshot="0" envelopefixtempo="0"
+             tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints/>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="160" version="1.6">
+  <programs>
+    <program programname="LD Big Dipper AS" volume="0.236000016" filtertype="0.545454562"
+             cutoff="0.288000017" resonance="0.460000008" osc1volume="0.732000053"
+             osc2volume="0.732000053" osc3volume="0" osc1waveform="0.5" osc2waveform="0"
+             oscsync="1" oscmastertune="0.5" osc1tune="0.513999999" osc2tune="0.5"
+             osc1finetune="0.5" osc2finetune="0.508000016" portamento="0.168000013"
+             keyfollow="0" filtercontour="0.884000063" filterattack="0.356000006"
+             filterdecay="0.620000005" filtersustain="0" filterrelease="0.5"
+             ampattack="0.0320000015" ampdecay="0.656000018" ampsustain="0.708000004"
+             amprelease="0.540000021" voices="0" portamentomode="0.5" lfo1waveform="0.320000023"
+             lfo2waveform="0" lfo1rate="0.180000007" lfo2rate="0.0480000004"
+             lfo1amount="0.712000012" lfo2amount="0.924000025" lfo1destination="0.714285731"
+             lfo2destination="0.428571433" lfo1phase="0" lfo2phase="0" osc1pw="0.5"
+             osc2fm="0" osc1phase="0.5" osc2phase="0" transpose="0.5" freeadattack="0"
+             freeaddecay="0.820000052" freeadamount="1" freeaddestination="0"
+             lfo1sync="0" lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="1"
+             velocityvolume="0" velocitycontour="0" velocitycutoff="0" pitchwheelcutoff="0"
+             pitchwheelpitch="0.172000006" highpass="0.188000008" detune="0.0840000063"
+             vintagenoise="0.692000031" ringmodulation="0" chorus1enable="0"
+             chorus2enable="1" reverbwet="0" reverbdecay="0.448000014" reverbpredelay="0.232000008"
+             reverbhighcut="0" reverblowcut="1" oscbitcrusher="1" filterdrive="0"
+             delaywet="0" delaytime="0.5" delaysync="0" delayfactorl="0" delayfactorr="0"
+             delayhighshelf="0" delaylowshelf="0" delayfeedback="0.5" envelopeeditordest1="0.857142866"
+             envelopeeditorspeed="0.200000003" envelopeeditoramount="1" envelopeoneshot="0"
+             envelopefixtempo="0" tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="1"
+                     controlPointLeftX="0" controlPointLeftY="1" controlPointRightX="0.100000001"
+                     controlPointRightY="1"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.025925925" centerPointY="0"
+                     controlPointLeftX="0" controlPointLeftY="0" controlPointRightX="0.125925943"
+                     controlPointRightY="0"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.0703703687" centerPointY="0.5030303"
+                     controlPointLeftX="0.049999997" controlPointLeftY="0.278787851"
+                     controlPointRightX="0.100000001" controlPointRightY="0.672727227"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.105555557" centerPointY="0.781818151"
+                     controlPointLeftX="0.0351851881" controlPointLeftY="0.727272749"
+                     controlPointRightX="0.224074066" controlPointRightY="0.854545474"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.164814815" centerPointY="0.896969676"
+                     controlPointLeftX="0.0648148209" controlPointLeftY="0.896969676"
+                     controlPointRightX="0.264814794" controlPointRightY="0.896969676"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.248148143" centerPointY="0.975757599"
+                     controlPointLeftX="0.148148149" controlPointLeftY="0.975757599"
+                     controlPointRightX="0.348148137" controlPointRightY="0.975757599"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="1"
+                     controlPointLeftX="0.899999976" controlPointLeftY="1" controlPointRightX="1"
+                     controlPointRightY="1"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

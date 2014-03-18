@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="200" version="1.6">
+  <programs>
+    <program programname="LD Ohm Duck Solo TAL" volume="0.584000051" filtertype="0.0909090936"
+             cutoff="0.164000005" resonance="0.408000022" osc1volume="0.516000032"
+             osc2volume="0.512000024" osc3volume="0" osc1waveform="0" osc2waveform="0"
+             oscsync="0" oscmastertune="0.5" osc1tune="0.25" osc2tune="0.244000018"
+             osc1finetune="0.452000022" osc2finetune="0.520000041" portamento="0"
+             keyfollow="0.736000061" filtercontour="0.74000001" filterattack="0"
+             filterdecay="0.396000028" filtersustain="0.0160000008" filterrelease="0.41200003"
+             ampattack="0" ampdecay="0" ampsustain="1" amprelease="0.200000003"
+             voices="0.400000006" portamentomode="0" lfo1waveform="0" lfo2waveform="0.91200006"
+             lfo1rate="0" lfo2rate="0.432000011" lfo1amount="0.5" lfo2amount="0.600000024"
+             lfo1destination="0.142857149" lfo2destination="0" lfo1phase="0.276000023"
+             lfo2phase="0" osc1pw="0.5" osc2fm="0" osc1phase="0" osc2phase="0"
+             transpose="0.596000016" freeadattack="0.256000012" freeaddecay="0.404000014"
+             freeadamount="0.436000019" freeaddestination="0.600000024" lfo1sync="0"
+             lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="0" velocityvolume="0"
+             velocitycontour="0" velocitycutoff="0.584000051" pitchwheelcutoff="0"
+             pitchwheelpitch="1" highpass="0.204000011" detune="0.372000009"
+             vintagenoise="0" ringmodulation="1" chorus1enable="0" chorus2enable="0"
+             reverbwet="0" reverbdecay="0.5" reverbpredelay="0" reverbhighcut="0"
+             reverblowcut="1" oscbitcrusher="1" filterdrive="0" delaywet="0.220000014"
+             delaytime="0.820000052" delaysync="1" delayfactorl="1" delayfactorr="0"
+             delayhighshelf="0.360000014" delaylowshelf="0" delayfeedback="0.104000002"
+             envelopeeditordest1="0" envelopeeditorspeed="1" envelopeeditoramount="0"
+             envelopeoneshot="0" envelopefixtempo="0" tab1open="1" tab2open="0"
+             tab3open="0" tab4open="1">
+      <splinePoints/>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="68" version="1.6">
+  <programs>
+    <program programname="BS Wonderland FN" volume="0.45600003" filtertype="0.181818187"
+             cutoff="0.108000003" resonance="0.120000005" osc1volume="0.524000049"
+             osc2volume="0.524000049" osc3volume="0.632000029" osc1waveform="0.5"
+             osc2waveform="0.25" oscsync="0" oscmastertune="0.5" osc1tune="0.246000007"
+             osc2tune="0.380000025" osc1finetune="0.5" osc2finetune="0.524000049"
+             portamento="0" keyfollow="0" filtercontour="1" filterattack="0"
+             filterdecay="0.340000004" filtersustain="0.0600000024" filterrelease="0"
+             ampattack="0" ampdecay="0" ampsustain="1" amprelease="0.396000028"
+             voices="0" portamentomode="1" lfo1waveform="0" lfo2waveform="0"
+             lfo1rate="0" lfo2rate="0.396000028" lfo1amount="0" lfo2amount="0.904000044"
+             lfo1destination="0" lfo2destination="0.571428597" lfo1phase="0"
+             lfo2phase="0.224000007" osc1pw="0.460000008" osc2fm="0" osc1phase="0.5"
+             osc2phase="0.388000011" transpose="0.512000024" freeadattack="0"
+             freeaddecay="0.580000043" freeadamount="0.256000012" freeaddestination="0.800000012"
+             lfo1sync="0" lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="0"
+             velocityvolume="0.548000038" velocitycontour="0" velocitycutoff="0.180000007"
+             pitchwheelcutoff="1" pitchwheelpitch="0" highpass="0" detune="0"
+             vintagenoise="0" ringmodulation="0" chorus1enable="1" chorus2enable="0"
+             reverbwet="0" reverbdecay="0.560000002" reverbpredelay="0.364000022"
+             reverbhighcut="0" reverblowcut="1" oscbitcrusher="1" filterdrive="0"
+             delaywet="0.244000018" delaytime="0.112000003" delaysync="1"
+             delayfactorl="1" delayfactorr="1" delayhighshelf="0.112000003"
+             delaylowshelf="0.184000015" delayfeedback="0.088000007" envelopeeditordest1="0.714285731"
+             envelopeeditorspeed="1" envelopeeditoramount="0.532000005" envelopeoneshot="0"
+             envelopefixtempo="0" tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.00606060028"
+                     controlPointLeftX="0" controlPointLeftY="0.00606060028" controlPointRightX="0.100000001"
+                     controlPointRightY="0.00606060028"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.0611111112" centerPointY="0.24242425"
+                     controlPointLeftX="0" controlPointLeftY="0.24242425" controlPointRightX="0.161111116"
+                     controlPointRightY="0.24242425"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.124074072" centerPointY="0.472727299"
+                     controlPointLeftX="0.0240740702" controlPointLeftY="0.472727299"
+                     controlPointRightX="0.224074066" controlPointRightY="0.472727299"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.183333337" centerPointY="0.73939395"
+                     controlPointLeftX="0.0833333358" controlPointLeftY="0.73939395"
+                     controlPointRightX="0.283333331" controlPointRightY="0.73939395"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.248148143" centerPointY="0.951515138"
+                     controlPointLeftX="0.148148149" controlPointLeftY="0.951515138"
+                     controlPointRightX="0.348148137" controlPointRightY="0.951515138"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.318518519" centerPointY="0.73939395"
+                     controlPointLeftX="0.218518525" controlPointLeftY="0.73939395"
+                     controlPointRightX="0.418518513" controlPointRightY="0.73939395"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.375925928" centerPointY="0.478787899"
+                     controlPointLeftX="0.275925934" controlPointLeftY="0.478787899"
+                     controlPointRightX="0.475925922" controlPointRightY="0.478787899"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.435185194" centerPointY="0.224242449"
+                     controlPointLeftX="0.3351852" controlPointLeftY="0.224242449"
+                     controlPointRightX="0.535185218" controlPointRightY="0.224242449"/>
+        <splinePoint isStartPoint="0" isEndPoint="0" centerPointX="0.498148143" centerPointY="0"
+                     controlPointLeftX="0.398148149" controlPointLeftY="0" controlPointRightX="0.598148167"
+                     controlPointRightY="0"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.00606060028"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.00606060028"
+                     controlPointRightX="1" controlPointRightY="0.00606060028"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>
