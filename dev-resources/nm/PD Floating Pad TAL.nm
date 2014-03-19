@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="241" version="1.6">
+  <programs>
+    <program programname="PD Floating Pad TAL" volume="0.284000009" filtertype="0.454545468"
+             cutoff="0.252000004" resonance="0.476000011" osc1volume="0.716000021"
+             osc2volume="0.732000053" osc3volume="0.128000006" osc1waveform="0"
+             osc2waveform="0" oscsync="1" oscmastertune="0.5" osc1tune="0.25"
+             osc2tune="0.844000041" osc1finetune="0.384000003" osc2finetune="0.592000008"
+             portamento="0.568000019" keyfollow="0.748000026" filtercontour="0.720000029"
+             filterattack="0.41200003" filterdecay="0.716000021" filtersustain="0.296000004"
+             filterrelease="0.736000061" ampattack="0.508000016" ampdecay="0"
+             ampsustain="1" amprelease="0.672000051" voices="0.400000006"
+             portamentomode="1" lfo1waveform="0.336000025" lfo2waveform="0.724000037"
+             lfo1rate="0.208000004" lfo2rate="0.468000025" lfo1amount="0.604000032"
+             lfo2amount="0.816000044" lfo1destination="0.285714298" lfo2destination="0.428571433"
+             lfo1phase="0" lfo2phase="0.880000055" osc1pw="0.5" osc2fm="0"
+             osc1phase="0" osc2phase="0" transpose="1" freeadattack="0.56400001"
+             freeaddecay="0.636000037" freeadamount="0.80400002" freeaddestination="0.400000006"
+             lfo1sync="0" lfo1keytrigger="0" lfo2sync="1" lfo2keytrigger="1"
+             velocityvolume="0" velocitycontour="0" velocitycutoff="0" pitchwheelcutoff="0"
+             pitchwheelpitch="0.168000013" highpass="0.536000013" detune="0.400000006"
+             vintagenoise="0" ringmodulation="0.876000047" chorus1enable="0"
+             chorus2enable="0" reverbwet="0" reverbdecay="0.700000048" reverbpredelay="0"
+             reverbhighcut="0" reverblowcut="1" oscbitcrusher="1" filterdrive="0"
+             delaywet="0.580000043" delaytime="0.400000006" delaysync="0"
+             delayfactorl="1" delayfactorr="0" delayhighshelf="0" delaylowshelf="0"
+             delayfeedback="0.188000008" envelopeeditordest1="0" envelopeeditorspeed="0"
+             envelopeeditoramount="0" envelopeoneshot="0" envelopefixtempo="0"
+             tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

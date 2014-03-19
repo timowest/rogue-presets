@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="239" version="1.6">
+  <programs>
+    <program programname="PD Easymat FN" volume="0.440000027" filtertype="0"
+             cutoff="0.428000033" resonance="0.263999999" osc1volume="0.516000032"
+             osc2volume="0.512000024" osc3volume="0" osc1waveform="0.5" osc2waveform="0"
+             oscsync="0" oscmastertune="0.5" osc1tune="0.486000031" osc2tune="0.5"
+             osc1finetune="0.448000014" osc2finetune="0.552000046" portamento="0"
+             keyfollow="0" filtercontour="0.768000007" filterattack="0.252000004"
+             filterdecay="0.744000018" filtersustain="0.232000008" filterrelease="0.452000022"
+             ampattack="0.54400003" ampdecay="1" ampsustain="0.632000029"
+             amprelease="0.496000022" voices="1" portamentomode="0" lfo1waveform="0"
+             lfo2waveform="0" lfo1rate="0.724000037" lfo2rate="0.24000001"
+             lfo1amount="0.636000037" lfo2amount="0.280000001" lfo1destination="0.571428597"
+             lfo2destination="0.571428597" lfo1phase="0.464000016" lfo2phase="0.280000001"
+             osc1pw="0.41200003" osc2fm="0" osc1phase="0.5" osc2phase="0"
+             transpose="0.5" freeadattack="0" freeaddecay="0" freeadamount="0"
+             freeaddestination="0" lfo1sync="0" lfo1keytrigger="0" lfo2sync="0"
+             lfo2keytrigger="0" velocityvolume="0" velocitycontour="0" velocitycutoff="0"
+             pitchwheelcutoff="0" pitchwheelpitch="0" highpass="0" detune="0"
+             vintagenoise="0" ringmodulation="0" chorus1enable="1" chorus2enable="0"
+             reverbwet="0.404000014" reverbdecay="0.580000043" reverbpredelay="0.108000003"
+             reverbhighcut="0.220000014" reverblowcut="0.828000069" oscbitcrusher="1"
+             filterdrive="0" delaywet="0" delaytime="0.5" delaysync="0" delayfactorl="0"
+             delayfactorr="0" delayhighshelf="0" delaylowshelf="0" delayfeedback="0.5"
+             envelopeeditordest1="0" envelopeeditorspeed="0" envelopeeditoramount="0"
+             envelopeoneshot="0" envelopefixtempo="0" tab1open="1" tab2open="0"
+             tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>

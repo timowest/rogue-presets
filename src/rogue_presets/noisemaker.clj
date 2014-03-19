@@ -180,6 +180,34 @@
 (defpreset-nm "LD We Felt Digital TUC")
 (defpreset-nm "LD Woholead FN")
 
+; pads
+
+(defpreset-nm "PD Base Pad TAL")
+(defpreset-nm "PD Bellomatism FN")
+(defpreset-nm "PD Big Trancer FN")
+;(defpreset-nm "PD Bionic Pad TAL")
+(defpreset-nm "PD Bit Orchestra TAL")
+(defpreset-nm "PD Bursting Pad TAL")
+(defpreset-nm "PD Dark Animations FN")
+(defpreset-nm "PD Dream Of 86 TUC")
+(defpreset-nm "PD Easymat FN")
+;(defpreset-nm "PD Fantasy PAD TAL")
+(defpreset-nm "PD Floating Pad TAL")
+;(defpreset-nm "PD Fuzzy Chorda TAL")
+(defpreset-nm "PD Gated Pad TAL")
+(defpreset-nm "PD Glasometer FN")
+;(defpreset-nm "PD Lightstorm TUC")
+(defpreset-nm "PD Luxury Strings AS")
+(defpreset-nm "PD Open Square FN")
+(defpreset-nm "PD Padwobbler FN")
+;(defpreset-nm "PD Parallax Pad AS")
+;(defpreset-nm "PD Ringmod Mod TAL")
+(defpreset-nm "PD Ringmodded FN")
+;(defpreset-nm "PD Spooky Organ TAL")
+(defpreset-nm "PD Sun Rise TAL")
+(defpreset-nm "PD Sweet Analogue TAL")
+;(defpreset-nm "PD Tron TAL")
+(defpreset-nm "PD Twoflower FN")
 
 (comment
   (doseq [[k v] big-synth]

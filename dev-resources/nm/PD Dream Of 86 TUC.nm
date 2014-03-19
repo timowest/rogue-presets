@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tal curprogram="238" version="1.6">
+  <programs>
+    <program programname="PD Dream of '86 TUC" volume="0.396000028" filtertype="0.181818187"
+             cutoff="0.224000007" resonance="0" osc1volume="0.668000042" osc2volume="0.656000018"
+             osc3volume="0" osc1waveform="0" osc2waveform="0" oscsync="0"
+             oscmastertune="0.5" osc1tune="0.51000005" osc2tune="0.5" osc1finetune="0.492000014"
+             osc2finetune="0.548000038" portamento="0" keyfollow="0" filtercontour="0.664000034"
+             filterattack="0.372000009" filterdecay="0.568000019" filtersustain="0.076000005"
+             filterrelease="0.596000016" ampattack="0.204000011" ampdecay="0.612000048"
+             ampsustain="0.388000011" amprelease="0.69600004" voices="1" portamentomode="0.5"
+             lfo1waveform="0" lfo2waveform="0" lfo1rate="0" lfo2rate="0.131999999"
+             lfo1amount="0.536000013" lfo2amount="0.45600003" lfo1destination="0.285714298"
+             lfo2destination="0.428571433" lfo1phase="0" lfo2phase="0" osc1pw="0.5"
+             osc2fm="0" osc1phase="0.5" osc2phase="0" transpose="0.5" freeadattack="0"
+             freeaddecay="0" freeadamount="0" freeaddestination="0" lfo1sync="0"
+             lfo1keytrigger="0" lfo2sync="0" lfo2keytrigger="0" velocityvolume="0"
+             velocitycontour="0.708000004" velocitycutoff="0.064000003" pitchwheelcutoff="0"
+             pitchwheelpitch="0.172000006" highpass="0.216000006" detune="0.180000007"
+             vintagenoise="0.168000013" ringmodulation="0" chorus1enable="0"
+             chorus2enable="1" reverbwet="0.704000056" reverbdecay="0.796000063"
+             reverbpredelay="0.376000017" reverbhighcut="0.596000016" reverblowcut="0.492000014"
+             oscbitcrusher="1" filterdrive="0" delaywet="0" delaytime="0.5"
+             delaysync="0" delayfactorl="0" delayfactorr="0" delayhighshelf="0"
+             delaylowshelf="0" delayfeedback="0.5" envelopeeditordest1="0"
+             envelopeeditorspeed="0" envelopeeditoramount="0" envelopeoneshot="0"
+             envelopefixtempo="0" tab1open="1" tab2open="0" tab3open="0" tab4open="1">
+      <splinePoints>
+        <splinePoint isStartPoint="1" isEndPoint="0" centerPointX="0" centerPointY="0.5"
+                     controlPointLeftX="0" controlPointLeftY="0.5" controlPointRightX="0.100000001"
+                     controlPointRightY="0.5"/>
+        <splinePoint isStartPoint="0" isEndPoint="1" centerPointX="1" centerPointY="0.5"
+                     controlPointLeftX="0.899999976" controlPointLeftY="0.5" controlPointRightX="1"
+                     controlPointRightY="0.5"/>
+      </splinePoints>
+    </program>
+  </programs>
+  <midimap/>
+</tal>
