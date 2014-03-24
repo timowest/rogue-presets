@@ -46,12 +46,12 @@
 
 (def lfo1-destination
   (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
-         5 mod_osc12_pitch 6 mod_osc1_pwm 7 mod_osc1_mod 8 mod_lfo2_sp}
+         5 mod_osc1_pwm 6 mod_osc1_mod 7 mod_lfo2_sp 8 mod_osc12_pitch }
         (partial calc-combobox 8)))
 
 (def lfo2-destination
   (comp {1 mod_no_target 2 mod_flt1_freq 3 mod_osc1_pitch 4 mod_osc2_pitch 
-         5 mod_osc12_pitch 6 mod_bus_a_pan 7 mod_volume 8 mod_lfo1_sp}
+        5 mod_bus_a_pan 6 mod_volume 7 mod_lfo1_sp  8 mod_osc12_pitch }
         (partial calc-combobox 8)))
 
 (def freead-destination
@@ -123,6 +123,13 @@
   mod3   env3
   mod4   lfo1
   mod5   lfo2)
+
+; lfo1
+; filter: (1 + value) * 0.5 * amount
+; osc1:   value * 48 * amount
+; osc2:   value * 48 * amount
+; fm:     (0.5 * (value + 1)) * amountPos
+; pw:     (0.5 * (value + 1)) * amountPos
 
 ; TODO check modulations
 
@@ -262,13 +269,13 @@
    ; chorus1enable
    ; chorus2enable 
 
-   :reverb_on    (> (:reverbwet m) 0.0)
-   ; reverbwet   TODO
-   ; reverbdecay
-   ; reverbpredelay TODO
-   ; reverbhighcut 
-   ; reverblowcut 
-
+   :reverb_on       (> (:reverbwet m) 0.0)
+   :reverb_depth    (:reverbwet m)
+   :reverb_predelay (/ (log-scaled-value (:reverbpredelay m)) 1000.0)
+   :reverb_decay    (:reverbdecay m) ; FIXME
+   :reverb_highcut  (log-scaled-value (:reverbhighcut m))
+   :reverb_lowcut   (log-scaled-value (:reverblowcut m))
+   
    ; oscbitcrusher 
   
    ; filterdrive 
